@@ -25,8 +25,8 @@ jobs:
         run: npm install -g resume-cli
 
       # Generate plain text resume
-      - name: Generate Plain Text Resume
-        run: resume export resume.txt --format text
+#      - name: Generate Plain Text Resume
+#        run: resume export resume.txt --format text
 
       # Generate HTML resume with a theme (e.g., elegant)
       - name: Generate HTML Resume
