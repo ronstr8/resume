@@ -1,34 +1,60 @@
-name: Build Resume Outputs
+name: Generate Resume Formats
 
 on:
   push:
     paths:
-      - 'resume.json'
+      - 'resume.json' # Trigger workflow when resume.json is updated
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
+    steps:
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Set up Node.js (required for resume-cli)
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20' # Use a recent Node.js version
 
-      - name: Install dependencies
-        run: npm install
+      # Install resume-cli and dependencies
+      - name: Install resume-cli
+        run: npm install -g resume-cli
 
-      - name: Generate TXT, HTML, and PDF versions
+      # Generate plain text resume
+      - name: Generate Plain Text Resume
+        run: resume export resume.txt --format text
+
+      # Generate HTML resume with a theme (e.g., elegant)
+      - name: Generate HTML Resume
+        run: resume export resume.html --theme elegant
+
+      # Install wkhtmltopdf for PDF generation
+      - name: Install wkhtmltopdf
+        run: sudo apt-get update && sudo apt-get install -y wkhtmltopdf
+
+      # Generate PDF resume from HTML
+      - name: Generate PDF Resume
+        run: wkhtmltopdf resume.html resume.pdf
+
+      # Commit generated files to the repository
+      - name: Commit generated files
         run: |
-          npx resume export resume.html
-          npx resume export resume.txt --format txt
-          npx resume export resume.pdf
-
-      - name: Commit outputs
-        run: |
-          git config user.name "GitHub Action"
-          git config user.email "action@github.com"
-          git add resume.* 
-          git commit -m "Auto-update resume outputs"
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add resume.txt resume.html resume.pdf
+          git commit -m "Auto-generate resume formats from resume.json" || echo "No changes to commit"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Deploy HTML to GitHub Pages (optional)
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          publish_branch: gh-pages
