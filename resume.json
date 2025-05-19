@@ -1,15 +1,13 @@
 {
   "basics": {
     "name": "Ronald E. Straight",
-    "label": "Senior Software Engineer",
     "email": "straightre@gmail.com",
     "phone": "716.903.2417",
-    "url": "http://github.com/ronstr8/",
     "location": {
       "address": "6 Park Lane Ct",
-      "postalCode": "14221",
       "city": "Williamsville",
       "region": "NY",
+      "postalCode": "14221",
       "countryCode": "US"
     },
     "profiles": [
@@ -23,57 +21,99 @@
         "username": "ronstr8",
         "url": "http://github.com/ronstr8/"
       }
-    ],
-    "summary": "Spending each day solving problems and building things with a great group of peers, and ending each day with more knowledge and wisdom than my yester-self."
+    ]
+  },
+  "objective": {
+    "summary": "Spending each day solving problems and building things with a great group of peers, and ending each day with more knowledge and wisdom than my yester-self. Oh, and it would be nice to actually want to go to work every day."
   },
   "skills": [
     {
       "name": "Programming Languages",
-      "keywords": ["Java", "Perl", "Golang", "C", "Python", "Rust"]
+      "keywords": ["Linux/Bash", "Java", "Perl", "Golang", "C", "Python", "Rust", "Javascript"]
     },
     {
-      "name": "Tools & Technologies",
-      "keywords": ["Linux/Bash", "Kubernetes", "Git", "REST API", "HTML/CSS", "JavaScript", "Refactoring", "Debugging"]
+      "name": "Technologies",
+      "keywords": ["Kubernetes", "Git", "HTML/CSS", "REST API", "Redis", "Oracle Cloud Infrastructure", "AWS"]
+    },
+    {
+      "name": "Concepts",
+      "keywords": ["Object-Oriented Design", "Refactoring", "Debugging"]
+    },
+    {
+      "name": "Databases",
+      "keywords": ["Oracle", "SQL", "DBIx::Class"]
+    },
+    {
+      "name": "Frameworks",
+      "keywords": ["Mason", "Netty", "Puppet"]
     }
   ],
   "work": [
     {
-      "name": "Synacor",
+      "company": "Synacor",
       "position": "Senior Software Engineer",
       "location": "Buffalo, NY",
       "startDate": "2019",
       "endDate": "2024",
-      "summary": "Led conversion of the Zimbra platform to a Kubernetes-native, multi-tenant service using Golang and Oracle Cloud. Later joined legacy Java team and helped complete major migration of hundreds of millions of mailboxes."
+      "highlights": [
+        "Lead developer in converting Zimbra email/collaboration system to a multi-tenant Kubernetes-native service, utilizing Golang and Oracle Cloud Infrastructure.",
+        "Contributed to core Zimbra engineering, working on legacy Java codebase with extensive use of remote debuggers.",
+        "Leveraged Golang and Kubernetes expertise to migrate several hundred million mailboxes from bare-metal servers to Zimbra on Kubernetes."
+      ]
     },
     {
-      "name": "Adblade / Solve Media",
+      "company": "Adblade/Solve Media",
       "position": "Senior Software Engineer",
       "location": "Buffalo, NY",
       "startDate": "2013",
       "endDate": "2019",
-      "summary": "Developed a RESTful DMP backend in Java/Netty serving Redis-stored user data for real-time ad targeting. Ported Ruby services to Java and migrated data centers to AWS."
+      "highlights": [
+        "Built a RESTful Data Management Platform (DMP) web server using Java/Netty, supporting sub-millisecond responses for demographic data requests, critical to ad-serving revenue.",
+        "Developed custom dispatching annotations and supported multiple HTTP methods for consumer targeting resources stored in Redis.",
+        "Ported a legacy image conversion REST server from Ruby to Java and migrated a Solaris data center environment to AWS."
+      ]
     },
     {
-      "name": "Kanoodle / Pulse360 / Seevast",
+      "company": "Kanoodle",
       "position": "Software Engineer III, Team Leader",
       "location": "Buffalo, NY",
       "startDate": "2004",
       "endDate": "2013",
-      "summary": "Led Perl development on ad-serving systems, contributed to DBIx::Class, administered Oracle DBs, and managed deployments to 100+ servers using Bash and Puppet."
+      "highlights": [
+        "Developed heavy Perl applications for ad-serving systems, contributing Oracle enhancements to the DBIx::Class open-source ORM framework.",
+        "Performed Oracle DBA duties, including DDL review, SQL, and Oracle analytic functions.",
+        "Created a 'RoboDeploy' system for multi-threaded deployment of websites, Puppet configurations, and Perl modules to over 100 servers.",
+        "Utilized Mason framework for frontend development and Bash for system administration."
+      ]
     },
     {
-      "name": "Netsville",
+      "company": "Netsville",
       "position": "Co-Founder and Software Developer",
       "location": "Rochester, NY",
       "startDate": "1994",
       "endDate": "2004",
-      "summary": "Built one of the first e-commerce systems in C with templating and plugin architecture. Startup founded with fellow hackers in the early days of the web."
+      "highlights": [
+        "Co-founded Netsville and developed 'Hazel,' one of the first e-commerce checkout systems, written in C with a templating language (HZML), plugin architecture, and DSL for shipping and tax calculations."
+      ]
     }
   ],
   "interests": [
     {
-      "name": "Tech & Hobbies",
-      "keywords": ["Hacking", "PC Building", "Gaming", "Existential Philosophy", "MUD", "The Love Boat", "Spending time with family"]
+      "name": "Personal Interests",
+      "keywords": [
+        "Hacking",
+        "Tinkering with gadgets",
+        "Building PCs",
+        "Video games (Fallout, Starfield, Cyberpunk)",
+        "Arguing philosophy and ethics with ChatGPT",
+        "Delving into MUD servers",
+        "Watching The Love Boat",
+        "Spending time with partner and two grown daughters"
+      ]
     }
-  ]
+  ],
+  "meta": {
+    "version": "1.0.0",
+    "format": "jsonresume"
+  }
 }
