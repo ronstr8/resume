@@ -33,7 +33,7 @@
     },
     {
       "name": "Technologies",
-      "keywords": ["Kubernetes", "Git", "HTML/CSS", "REST API", "Redis", "Oracle Cloud Infrastructure", "AWS"]
+      "keywords": ["Kubernetes", "Git", "HTML/CSS", "REST API", "Oracle Cloud Infrastructure", "AWS"]
     },
     {
       "name": "Concepts",
@@ -41,11 +41,11 @@
     },
     {
       "name": "Databases",
-      "keywords": ["Oracle", "SQL", "DBIx::Class"]
+      "keywords": ["Oracle", "SQL", "DBIx::Class", "MariaDB"]
     },
     {
       "name": "Frameworks",
-      "keywords": ["Mason", "Netty", "Puppet"]
+      "keywords": ["Mason", "Netty", "Redis"]
     }
   ],
   "work": [
