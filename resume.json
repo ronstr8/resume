@@ -54,7 +54,7 @@
       "summary": "Developed a RESTful DMP backend in Java/Netty serving Redis-stored user data for real-time ad targeting. Ported Ruby services to Java and migrated data centers to AWS."
     },
     {
-      "name": "Kanoodle",
+      "name": "Kanoodle / Pulse360 / Seevast",
       "position": "Software Engineer III, Team Leader",
       "location": "Buffalo, NY",
       "startDate": "2004",
@@ -73,7 +73,7 @@
   "interests": [
     {
       "name": "Tech & Hobbies",
-      "keywords": ["Hacking", "Building PCs", "Gaming", "Philosophy", "MUDs", "The Love Boat", "Spending time with family"]
+      "keywords": ["Hacking", "PC Building", "Gaming", "Existential Philosophy", "MUD", "The Love Boat", "Spending time with family"]
     }
   ]
 }
