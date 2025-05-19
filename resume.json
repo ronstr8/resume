@@ -1,0 +1,79 @@
+{
+  "basics": {
+    "name": "Ronald E. Straight",
+    "label": "Senior Software Engineer",
+    "email": "straightre@gmail.com",
+    "phone": "716.903.2417",
+    "url": "http://github.com/ronstr8/",
+    "location": {
+      "address": "6 Park Lane Ct",
+      "postalCode": "14221",
+      "city": "Williamsville",
+      "region": "NY",
+      "countryCode": "US"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "ronstr8",
+        "url": "https://www.linkedin.com/in/ronstr8/"
+      },
+      {
+        "network": "GitHub",
+        "username": "ronstr8",
+        "url": "http://github.com/ronstr8/"
+      }
+    ],
+    "summary": "Spending each day solving problems and building things with a great group of peers, and ending each day with more knowledge and wisdom than my yester-self."
+  },
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "keywords": ["Java", "Perl", "Golang", "C", "Python", "Rust"]
+    },
+    {
+      "name": "Tools & Technologies",
+      "keywords": ["Linux/Bash", "Kubernetes", "Git", "REST API", "HTML/CSS", "JavaScript", "Refactoring", "Debugging"]
+    }
+  ],
+  "work": [
+    {
+      "name": "Synacor",
+      "position": "Senior Software Engineer",
+      "location": "Buffalo, NY",
+      "startDate": "2019",
+      "endDate": "2024",
+      "summary": "Led conversion of the Zimbra platform to a Kubernetes-native, multi-tenant service using Golang and Oracle Cloud. Later joined legacy Java team and helped complete major migration of hundreds of millions of mailboxes."
+    },
+    {
+      "name": "Adblade / Solve Media",
+      "position": "Senior Software Engineer",
+      "location": "Buffalo, NY",
+      "startDate": "2013",
+      "endDate": "2019",
+      "summary": "Developed a RESTful DMP backend in Java/Netty serving Redis-stored user data for real-time ad targeting. Ported Ruby services to Java and migrated data centers to AWS."
+    },
+    {
+      "name": "Kanoodle",
+      "position": "Software Engineer III, Team Leader",
+      "location": "Buffalo, NY",
+      "startDate": "2004",
+      "endDate": "2013",
+      "summary": "Led Perl development on ad-serving systems, contributed to DBIx::Class, administered Oracle DBs, and managed deployments to 100+ servers using Bash and Puppet."
+    },
+    {
+      "name": "Netsville",
+      "position": "Co-Founder and Software Developer",
+      "location": "Rochester, NY",
+      "startDate": "1994",
+      "endDate": "2004",
+      "summary": "Built one of the first e-commerce systems in C with templating and plugin architecture. Startup founded with fellow hackers in the early days of the web."
+    }
+  ],
+  "interests": [
+    {
+      "name": "Tech & Hobbies",
+      "keywords": ["Hacking", "Building PCs", "Gaming", "Philosophy", "MUDs", "The Love Boat", "Spending time with family"]
+    }
+  ]
+}
