@@ -24,13 +24,17 @@ jobs:
       - name: Install resume-cli
         run: npm install -g resume-cli
 
+
+      - name: Install elegant theme
+ 	    run: npm install jsonresume-theme-elegant
+
       # Generate plain text resume
 #      - name: Generate Plain Text Resume
 #        run: resume export resume.txt --format text
 
       # Generate HTML resume with a theme (e.g., elegant)
       - name: Generate HTML Resume
-        run: resume export resume.html --theme elegant
+        run: npx resume export resume.html --theme elegant
 
       # Install wkhtmltopdf for PDF generation
       - name: Install wkhtmltopdf
