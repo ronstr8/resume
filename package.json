@@ -7,6 +7,6 @@
     "build:pdf": "resume export resume.pdf"
   },
   "dependencies": {
-    "resume-cli": "^4.0.0"
+    "resume-cli": "^3.0.4"
   }
 }
