@@ -25,8 +25,8 @@ jobs:
         run: npm install -g resume-cli
 
 
-      - name: Install elegant theme
- 	    run: npm install jsonresume-theme-elegant
+        name: Install elegant theme
+        run: npm install jsonresume-theme-elegant
 
       # Generate plain text resume
 #      - name: Generate Plain Text Resume
@@ -62,3 +62,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
           publish_branch: gh-pages
+
+# vim: set noexpandtab
