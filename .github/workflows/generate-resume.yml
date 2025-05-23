@@ -35,6 +35,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          git pull
           git add resume.html resume.pdf
           git commit -m "Auto-generate resume formats from resume.json" || echo "No changes to commit"
           git push
