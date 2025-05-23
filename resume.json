@@ -1,0 +1,118 @@
+{
+  "basics": {
+    "name": "Ronald E. Straight",
+    "email": "straightre@gmail.com",
+    "phone": "716.903.2417",
+    "location": {
+      "address": "6 Park Lane Ct",
+      "city": "Williamsville",
+      "region": "NY",
+      "postalCode": "14221",
+      "countryCode": "US"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "ronstr8",
+        "url": "https://www.linkedin.com/in/ronstr8/"
+      },
+      {
+        "network": "GitHub",
+        "username": "ronstr8",
+        "url": "http://github.com/ronstr8/"
+      }
+    ]
+  },
+  "objective": {
+    "summary": "Spending each day solving problems and building things with a great group of peers, and ending each day with more knowledge and wisdom than my yester-self. Oh, and it would be nice to actually want to go to work every day."
+  },
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "keywords": ["Linux/Bash", "Java", "Perl", "Golang", "C", "Python", "Rust", "Javascript", "MOO"]
+    },
+    {
+      "name": "Technologies",
+      "keywords": ["Kubernetes", "Git", "HTML", "CSS", "REST API", "Oracle Cloud Infrastructure", "AWS"]
+    },
+    {
+      "name": "Concepts",
+      "keywords": ["Object-Oriented Design", "Refactoring", "Debugging"]
+    },
+    {
+      "name": "Databases",
+      "keywords": ["Oracle", "SQL", "DBIx::Class", "MariaDB"]
+    },
+    {
+      "name": "Frameworks",
+      "keywords": ["Mason", "Netty", "Redis"]
+    }
+  ],
+  "work": [
+    {
+      "company": "Synacor",
+      "position": "Senior Software Engineer",
+      "location": "Buffalo, NY",
+      "startDate": "2019",
+      "endDate": "2024",
+      "highlights": [
+        "Lead developer in converting Zimbra email/collaboration system to a multi-tenant Kubernetes-native service, utilizing Golang and Oracle Cloud Infrastructure.",
+        "Contributed to core Zimbra engineering, working on legacy Java codebase with extensive use of remote debuggers.",
+        "Leveraged Golang and Kubernetes expertise to migrate several hundred million mailboxes from bare-metal servers to Zimbra on Kubernetes."
+      ]
+    },
+    {
+      "company": "Adblade / Solve Media",
+      "position": "Senior Software Engineer",
+      "location": "Buffalo, NY",
+      "startDate": "2013",
+      "endDate": "2019",
+      "highlights": [
+        "Built a RESTful Data Management Platform (DMP) web server using Java/Netty, supporting sub-millisecond responses for demographic data requests, critical to ad-serving revenue.",
+        "Developed custom dispatching annotations and supported multiple HTTP methods for consumer targeting resources stored in Redis.",
+        "Ported a legacy image conversion REST server from Ruby to Java and migrated a Solaris data center environment to AWS."
+      ]
+    },
+    {
+      "company": "Kanoodle / Pulse360 / Seevast",
+      "position": "Software Engineer III, Team Leader",
+      "location": "Buffalo, NY",
+      "startDate": "2004",
+      "endDate": "2013",
+      "highlights": [
+        "Developed heavy Perl applications for ad-serving systems, contributing Oracle enhancements to the DBIx::Class open-source ORM framework.",
+        "Performed Oracle DBA duties, including DDL review, SQL, and Oracle analytic functions.",
+        "Created a 'RoboDeploy' system for multi-threaded deployment of websites, Puppet configurations, and Perl modules to over 100 servers.",
+        "Utilized Mason framework for frontend development and Bash for system administration."
+      ]
+    },
+    {
+      "company": "Netsville",
+      "position": "Co-Founder and Software Developer",
+      "location": "Rochester, NY",
+      "startDate": "1994",
+      "endDate": "2004",
+      "highlights": [
+        "Co-founded Netsville and developed 'Hazel,' one of the first e-commerce checkout systems, written in C with a templating language (HZML), plugin architecture, and DSL for shipping and tax calculations."
+      ]
+    }
+  ],
+  "interests": [
+    {
+      "name": "Personal Interests",
+      "keywords": [
+        "Hacking, in the ESR Art of Unix sense",
+        "Tinkering with gadgets",
+        "Building PCs",
+        "Video games (Fallout, Starfield, Cyberpunk)",
+        "Arguing philosophy and ethics with ChatGPT (or Grok)",
+        "Delving into MUD servers, keeping my LambdaMOO player alive",
+        "Watching The Love Boat"
+      ]
+    }
+  ],
+  "meta": {
+    "version": "1.0.0",
+    "format": "jsonresume"
+  }
+}
