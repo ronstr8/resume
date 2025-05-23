@@ -3,59 +3,44 @@ name: Generate Resume Formats
 on:
   push:
     paths:
-      - 'resume.json' # Trigger workflow when resume.json is updated
+      - 'resume.json'
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the repository
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Set up Node.js (required for resume-cli)
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Use a recent Node.js version
+          node-version: '20'
 
-      # Install resume-cli and dependencies
-      - name: Install resume-cli
-        run: npm install -g resume-cli
+      - name: Install resume-cli and elegant theme
+        run: |
+          npm install jsonresume-theme-stackoverflow
 
-
-        name: Install elegant theme
-        run: npm install jsonresume-theme-elegant
-
-      # Generate plain text resume
-#      - name: Generate Plain Text Resume
-#        run: resume export resume.txt --format text
-
-      # Generate HTML resume with a theme (e.g., elegant)
       - name: Generate HTML Resume
-        run: npx resume export resume.html --theme elegant
+        run: npx resume export resume.html --theme stackoverflow
 
-      # Install wkhtmltopdf for PDF generation
       - name: Install wkhtmltopdf
         run: sudo apt-get update && sudo apt-get install -y wkhtmltopdf
 
-      # Generate PDF resume from HTML
       - name: Generate PDF Resume
         run: wkhtmltopdf resume.html resume.pdf
 
-      # Commit generated files to the repository
       - name: Commit generated files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add resume.txt resume.html resume.pdf
+          git add resume.html resume.pdf
           git commit -m "Auto-generate resume formats from resume.json" || echo "No changes to commit"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Deploy HTML to GitHub Pages (optional)
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
@@ -63,4 +48,3 @@ jobs:
           publish_dir: ./
           publish_branch: gh-pages
 
-# vim: set noexpandtab
