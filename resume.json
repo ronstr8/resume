@@ -53,8 +53,8 @@
       "company": "Synacor",
       "position": "Senior Software Engineer",
       "location": "Buffalo, NY",
-      "startDate": "2019",
-      "endDate": "2024",
+      "startDate": "2019-02",
+      "endDate": "2024-10",
       "highlights": [
         "Lead developer in converting Zimbra email/collaboration system to a multi-tenant Kubernetes-native service, utilizing Golang and Oracle Cloud Infrastructure.",
         "Contributed to core Zimbra engineering, working on legacy Java codebase with extensive use of remote debuggers.",
@@ -65,8 +65,8 @@
       "company": "Adblade / Solve Media",
       "position": "Senior Software Engineer",
       "location": "Buffalo, NY",
-      "startDate": "2013",
-      "endDate": "2019",
+      "startDate": "2013-05",
+      "endDate": "2019-01",
       "highlights": [
         "Built a RESTful Data Management Platform (DMP) web server using Java/Netty, supporting sub-millisecond responses for demographic data requests, critical to ad-serving revenue.",
         "Developed custom dispatching annotations and supported multiple HTTP methods for consumer targeting resources stored in Redis.",
@@ -77,8 +77,8 @@
       "company": "Kanoodle / Pulse360 / Seevast",
       "position": "Software Engineer III, Team Leader",
       "location": "Buffalo, NY",
-      "startDate": "2004",
-      "endDate": "2013",
+      "startDate": "2004-11",
+      "endDate": "2013-04",
       "highlights": [
         "Developed heavy Perl applications for ad-serving systems, contributing Oracle enhancements to the DBIx::Class open-source ORM framework.",
         "Performed Oracle DBA duties, including DDL review, SQL, and Oracle analytic functions.",
@@ -88,10 +88,10 @@
     },
     {
       "company": "Netsville",
-      "position": "Co-Founder and Software Developer",
+      "position": "Co-Founder, Software Developer",
       "location": "Rochester, NY",
-      "startDate": "1994",
-      "endDate": "2004",
+      "startDate": "1994-06",
+      "endDate": "2004-11",
       "highlights": [
         "Co-founded Netsville and developed 'Hazel,' one of the first e-commerce checkout systems, written in C with a templating language (HZML), plugin architecture, and DSL for shipping and tax calculations."
       ]
@@ -101,12 +101,12 @@
     {
       "name": "Personal Interests",
       "keywords": [
-        "Hacking, in the ESR Art of Unix sense",
+        "Hacking, in the ESR sense",
         "Tinkering with gadgets",
         "Building PCs",
-        "Video games (Fallout, Starfield, Cyberpunk)",
-        "Arguing philosophy and ethics with ChatGPT (or Grok)",
-        "Delving into MUD servers, keeping my LambdaMOO player alive",
+        "Fallout, Starfield, Cyberpunk",
+        "Arguing with ChatGPT",
+        "Rolling in MUD",
         "Watching The Love Boat"
       ]
     }
