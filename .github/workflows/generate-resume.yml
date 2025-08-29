@@ -24,7 +24,7 @@ jobs:
           npm install jsonresume-theme-stackoverflow jsonresume-theme-elegant jsonresume-theme-class
 
       - name: Generate HTML Resume
-        run: npx resume export resume.html --theme elegant
+        run: npx resume export resume.html --theme flat
 
       - name: Install wkhtmltopdf
         run: sudo apt-get update && sudo apt-get install -y wkhtmltopdf
