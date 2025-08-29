@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'resume.json'
+      - '.github/workflows/generate-resume.yml'
 
 jobs:
   build:
@@ -23,7 +24,7 @@ jobs:
           npm install jsonresume-theme-stackoverflow jsonresume-theme-elegant jsonresume-theme-class
 
       - name: Generate HTML Resume
-        run: npx resume export resume.html --theme class
+        run: npx resume export resume.html --theme elegant
 
       - name: Install wkhtmltopdf
         run: sudo apt-get update && sudo apt-get install -y wkhtmltopdf
