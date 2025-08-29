@@ -7,6 +7,8 @@
     "build:pdf": "resume export resume.pdf"
   },
   "dependencies": {
+    "jsonresume-theme-class": "^0.1.2",
+    "jsonresume-theme-elegant": "^1.16.1",
     "jsonresume-theme-stackoverflow": "^2.1.0",
     "resume-cli": "^3.0.4"
   }
