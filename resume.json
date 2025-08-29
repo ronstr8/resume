@@ -29,7 +29,7 @@
   "skills": [
     {
       "name": "Programming Languages",
-      "keywords": ["Linux/Bash", "Java", "Perl", "Golang", "C", "Python", "Rust", "Javascript", "MOO"]
+      "keywords": ["Bash", "Java", "Perl", "Golang", "C", "Python", "Rust", "Javascript", "MOO"]
     },
     {
       "name": "Technologies",
