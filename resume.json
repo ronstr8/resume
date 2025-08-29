@@ -41,11 +41,11 @@
     },
     {
       "name": "Databases",
-      "keywords": ["Oracle", "SQL", "DBIx::Class", "MariaDB", "Redis", "MongoDB"]
+      "keywords": ["Oracle", "MySQL", "PostgreSQL", "MariaDB", "Redis", "MongoDB"]
     },
     {
       "name": "Frameworks",
-      "keywords": ["Mason", "Netty", "Dropwizard"]
+      "keywords": ["Mason", "DBIx::Class", "Netty", "Dropwizard"]
     }
   ],
   "work": [
