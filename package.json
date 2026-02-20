@@ -7,7 +7,9 @@
     "build:pdf": "resume export resume.pdf"
   },
   "dependencies": {
-    "jsonresume-theme-stackoverflow": "^2.1.0",
-    "resume-cli": "^3.0.4"
+    "jsonresume-theme-stackoverflow": "^2.2.0",
+    "puppeteer": "^24.37.5",
+    "resume-cli": "^3.0.4",
+    "resumed": "^6.1.0"
   }
 }
