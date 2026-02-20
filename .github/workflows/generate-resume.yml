@@ -20,16 +20,14 @@ jobs:
           node-version: '20'
 
       - name: Install resumed and themes
-        # We include 'puppeteer' here to ensure the PDF engine is ready
         run: |
           npm install resumed jsonresume-theme-stackoverflow puppeteer
 
       - name: Generate HTML Resume
-        run: npx resumed render resume.json -o resume.html -t stackoverflow
+        run: npx resumed render resume.json -o resume.html -t jsonresume-theme-stackoverflow
 
       - name: Generate PDF Resume
-        # 'resumed' uses Puppeteer by default for PDF exports
-        run: npx resumed export resume.pdf -t stackoverflow
+        run: npx resumed export resume.pdf -t jsonresume-theme-stackoverflow
 
       - name: Commit generated files
         run: |
