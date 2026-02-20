@@ -5,7 +5,7 @@
     "email": "straightre@gmail.com",
     "phone": "716-903-2417",
     "url": "https://github.com/ronstr8",
-    "summary": "Spending each day solving problems and building things with a great group of peers, and ending each day with more knowledge and wisdom than my yester-self. Oh, and it would be nice to actually want to go to work every day.",
+    "summary": "I want to work with other clever human rubber ducks. If you have a problem with your employees using AI, then I do not want your job. It is an essential tool that gives you a team of agents when you hire one competent hacker. And you're going to need them until ASI comes and jobs don't exist for humans anymore.",
     "location": {
       "address": "6 Park Lane Ct",
       "city": "Williamsville",
@@ -134,7 +134,7 @@
     }
   ],
   "meta": {
-    "version": "2.0.0",
+    "version": "2.0.1",
     "format": "jsonresume",
     "lastUpdated": "2026-02-20T17:48:57-05:00"
   }

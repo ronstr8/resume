@@ -40,7 +40,7 @@ jobs:
 
       - name: Generate PDF Resume
         run: |
-          npx puppeteer print resume.html resume.pdf --no-sandbox --disable-setuid-sandbox --disable-gpu --disable-dev-shm-usage
+          ./scripts/generate-resume-pdf-from-html.js
 
       - name: Commit generated files
         run: |
