@@ -1,11 +1,13 @@
 <!doctype html>
-<html>
+<html lang="en-gb">
   <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-  <title>Ronald E. Straight</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  <style>
-  /********************************************
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Ronald E. Straight</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./override.css">
+    <style>
+      /********************************************
 * 	reset from
 * 	http://meyerweb.com/eric/tools/css/reset/
 *******************************************/
@@ -139,14 +141,101 @@ table {
 }
 
 /****************
+*	CSS VARIABLES
+****************/
+
+:root {
+  --color-text: #40484f;
+  --color-text-secondary: #606d76;
+  --color-text-muted: #757575;
+  --color-heading: #202931;
+  --color-accent: #ff6d1f;
+  --color-link: #0095ff;
+  --color-link-hover: #0c65a5;
+  --color-background: var(--color-section-title-bg);
+  --color-background-alt: #f1f8ff;
+  --color-border: #ccc;
+  --color-border-light: #ddd;
+  --color-keyword-text: #2c5777;
+  --color-keyword-bg: #dfeaf1;
+  --color-keyword-border: #dfeaf1;
+  --color-reference-border: #ff6d1f;
+  --color-bar-beginner: #eb5f51;
+  --color-bar-intermediate: #ffdf1f;
+  --color-bar-advanced: #5cb85c;
+  --color-bar-master: #59c596;
+  --color-section-title-bg: #fff;
+  --font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: #d4d4d8;
+    --color-text-secondary: #a1a1aa;
+    --color-text-muted: #9ca3af;
+    --color-heading: #e4e4e7;
+    --color-accent: #fb923c;
+    --color-link: #60a5fa;
+    --color-link-hover: #93c5fd;
+    --color-background: #18181b;
+    --color-background-alt: #27272a;
+    --color-border: #3f3f46;
+    --color-border-light: #3f3f46;
+    --color-keyword-text: #93c5fd;
+    --color-keyword-bg: #1e3a5f;
+    --color-keyword-border: #1e3a5f;
+    --color-reference-border: #fb923c;
+    --color-bar-beginner: #ef4444;
+    --color-bar-intermediate: #eab308;
+    --color-bar-advanced: #22c55e;
+    --color-bar-master: #34d399;
+    --color-section-title-bg: #18181b;
+    --font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  }
+}
+
+/****************
+*	ACCESSIBILITY
+****************/
+
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 999;
+  padding: 0.5em 1em;
+  background: var(--color-accent);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.skip-to-content:focus {
+  left: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/****************
 *	COMMONS
 ****************/
 
 body,
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: var(--font-family);
   font-size: 13px;
-  color: #40484f;
+  color: var(--color-text);
+  background-color: var(--color-background);
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.46153846;
@@ -158,13 +247,19 @@ p {
 }
 
 a {
-  color: #0095ff;
+  color: var(--color-link);
   text-decoration: none;
 }
 
 a:hover {
-  color: #0c65a5;
+  color: var(--color-link-hover);
   text-decoration: underline;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: 2px;
 }
 
 li {
@@ -186,7 +281,7 @@ h3 {
 }
 
 em {
-  color: #757575;
+  color: var(--color-text-muted);
 }
 
 strong {
@@ -207,7 +302,7 @@ strong {
 
 section .location {
   margin-right: 0.5em;
-  color: #606d76;
+  color: var(--color-text-secondary);
   font-weight: 700;
 }
 
@@ -217,6 +312,11 @@ section .location {
 
 #profiles .item {
   padding: 0;
+  margin-right: 0.8em;
+}
+
+#header {
+  margin-bottom: 1rem;
 }
 
 #header > #profiles,
@@ -250,7 +350,7 @@ section .location {
 }
 
 #header h2.label {
-  color: #202931;
+  color: var(--color-heading);
   font-size: 1.47rem;
   font-weight: 300;
 }
@@ -266,7 +366,7 @@ section .location {
 }
 
 .main-summary {
-  background: #f1f8ff;
+  background: var(--color-background-alt);
   padding: 1.2em 1em;
 }
 
@@ -276,9 +376,9 @@ section .location {
 
 .section-title {
   display: inline-block;
-  background: #fff;
+  background: var(--color-section-title-bg);
   padding: 0 1em 0.3em 0;
-  color: #ff6d1f;
+  color: var(--color-accent);
   text-transform: uppercase;
   font-weight: 600;
   border: none;
@@ -298,7 +398,7 @@ section .location {
   left: 0;
   top: 0.7em;
   height: 1px;
-  background: #ccc;
+  background: var(--color-border);
   content: "";
   width: 100%;
   z-index: -100;
@@ -360,7 +460,7 @@ section .location {
 .institution,
 .organization,
 .awarder {
-  color: #606d76;
+  color: var(--color-text-secondary);
   font-weight: 400;
 }
 
@@ -368,7 +468,7 @@ section .location {
   display: block;
   font-size: 1rem;
   padding: 0.1em 0;
-  color: #606d76;
+  color: var(--color-text-secondary);
   font-weight: 400;
 }
 
@@ -384,19 +484,15 @@ section .location {
   padding: 4px 5px 5px;
   font-size: 0.9rem;
   line-height: 1;
-  color: #3e6d8e;
-  background-color: #dfeaf1;
-  border: 0 solid #dfeaf1;
+  color: var(--color-keyword-text);
+  background-color: var(--color-keyword-bg);
+  border: 0 solid var(--color-keyword-border);
   white-space: nowrap;
 }
 
 .keywords li:hover,
 .courses li:hover {
-  background: #dfeaf0;
-}
-
-.highlights {
-  margin: 1em 0 0 0;
+  background: var(--color-keyword-bg);
 }
 
 .highlights > li > p {
@@ -527,7 +623,7 @@ section .location {
 }
 
 .level .bar {
-  border: 1px solid #ddd;
+  border: 1px solid var(--color-border-light);
   display: block;
   width: 10em;
   height: 5px;
@@ -544,31 +640,32 @@ section .location {
 }
 
 .level.beginner .bar::after {
-  background: #eb5f51;
+  background: var(--color-bar-beginner);
   width: 2.5em;
 }
 
 .level.intermediate .bar::after {
-  background: #ffdf1f;
+  background: var(--color-bar-intermediate);
   width: 5em;
 }
 
 .level.advanced .bar::after,
 .level.fluent .bar::after {
-  background: #5cb85c;
+  background: var(--color-bar-advanced);
   width: 7.5em;
 }
 
 .level.master .bar::after,
+.level.expert .bar::after,
 .level.native.speaker .bar::after {
-  background: #59c596;
+  background: var(--color-bar-master);
   width: 10em;
 }
 
 #references .item {
   padding-left: 0.5em;
   margin-bottom: 1em;
-  border-left: 5px solid #ff6d1f;
+  border-left: 5px solid var(--color-reference-border);
 }
 
 .section > section > section {
@@ -588,6 +685,83 @@ section .location {
 .display {
   display: block;
   opacity: 1 !important;
+}
+
+/****************
+*		MOBILE
+****************/
+
+@media screen and (max-width: 601px) {
+  #resume {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  #skills,
+  #languages,
+  #interests {
+    flex-direction: column;
+  }
+
+  #skills .item,
+  #languages .item,
+  #interests .item {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  #skills .item .keywords {
+    width: 100%;
+  }
+
+  #header > #profiles,
+  #header > #contact {
+    flex-wrap: wrap;
+  }
+
+  #header > div > div {
+    margin-right: 0.8em;
+    margin-bottom: 0.3em;
+  }
+
+  #header h1.name {
+    font-size: 2rem;
+  }
+
+  #header h2.label {
+    font-size: 1.2rem;
+  }
+
+  #header .image {
+    float: none;
+    display: block;
+    margin: 0 auto 1rem;
+    width: 8em;
+  }
+
+  .section header .date {
+    display: block;
+    float: none;
+    font-size: 0.9rem;
+    margin-top: 0.2em;
+  }
+
+  .section > section > header {
+    font-size: 1.15rem;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 601px) {
+  #skills {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #skills .item {
+    width: 48%;
+    padding-right: 2%;
+  }
 }
 
 /****************
@@ -793,250 +967,9 @@ section .location {
   }
 }
 
-  </style>
-  
+    </style>
   </head>
   <body>
-  
-  <div id="resume">
-    	<header id="header" class="clear">
-    		<div>
-    			<h1 class="name">Ronald E. Straight</h1>
-    			<h2 class="label"></h2>
-    		</div>
-    
-    		<span class="location">
-    			<span class="address">6 Park Lane Ct,</span>
-    			<span class="postalCode">14221,</span>
-    			<span class="city">Williamsville,</span>
-    			<span class="region">NY</span>
-    			<span class="countryCode">(US)</span>
-    		</span>
-    
-    
-    		<div id="contact">
-    			<div class="email">
-    				<span class="fa-regular fa-envelope"></span>
-    				<a class="hide-href-print" href="mailto:straightre@gmail.com">straightre@gmail.com</a>
-    			</div>
-    			<div class="phone">
-    				<span class="fa-solid fa-mobile-screen-button"></span>
-    				<a class="hide-href-print" href="tel:716-903-2417">716-903-2417</a>
-    			</div>
-    		</div>
-    
-    		<div id="profiles">
-    			<div class="item">
-    				<div class="username">
-    					<span class="fa-brands fa-linkedin linkedin social"></span>
-    					<span class="url">
-    						<a target="_blank" href="https://linkedin.com/in/ronstr8/"><span class="show-only-url-print">ronstr8</span></a>
-    					</span>
-    				</div>
-    			</div>
-    			<div class="item">
-    				<div class="username">
-    					<span class="fa-brands fa-github github social"></span>
-    					<span class="url">
-    						<a target="_blank" href="https://github.com/ronstr8/"><span class="show-only-url-print">ronstr8</span></a>
-    					</span>
-    				</div>
-    			</div>
-    		</div>
-    	</header>
-    
-    
-    <section class="section">
-      <header>
-        <h2 class='section-title'>Skills</h2>
-      </header>
-      <section id="skills">
-        <div class="item">
-          <h3 class="name">
-            Programming Languages
-          </h3>
-          <ul class="keywords">
-            <li>Bash</li>
-            <li>Java</li>
-            <li>Perl</li>
-            <li>Golang</li>
-            <li>C</li>
-            <li>Python</li>
-            <li>Rust</li>
-            <li>Javascript</li>
-            <li>MOO</li>
-          </ul>
-        </div>
-        <div class="item">
-          <h3 class="name">
-            Technologies
-          </h3>
-          <ul class="keywords">
-            <li>Kubernetes</li>
-            <li>Git</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>REST API</li>
-            <li>Oracle Cloud Infrastructure</li>
-            <li>AWS</li>
-          </ul>
-        </div>
-        <div class="item">
-          <h3 class="name">
-            Concepts
-          </h3>
-          <ul class="keywords">
-            <li>Object-Oriented Design</li>
-            <li>Refactoring</li>
-            <li>Debugging</li>
-          </ul>
-        </div>
-        <div class="item">
-          <h3 class="name">
-            Databases
-          </h3>
-          <ul class="keywords">
-            <li>Oracle</li>
-            <li>MySQL</li>
-            <li>PostgreSQL</li>
-            <li>MariaDB</li>
-            <li>Redis</li>
-            <li>MongoDB</li>
-          </ul>
-        </div>
-        <div class="item">
-          <h3 class="name">
-            Frameworks
-          </h3>
-          <ul class="keywords">
-            <li>Mason</li>
-            <li>DBIx::Class</li>
-            <li>Netty</li>
-            <li>Dropwizard</li>
-          </ul>
-        </div>
-      </section>
-    </section>
-    <section class="section">
-      <header>
-        <h2 class='section-title'>Work Experience <span class="item-count">(4)</span></h2>
-      </header>
-    
-      <section id="work">
-        <section class="work-item">
-    
-            <header class="clear">
-              <div class="date">
-                <span class="startDate">Feb 2019</span>
-                <span class="endDate">- Oct 2024</span>
-              </div>
-              <div class="position">Senior Software Engineer</div>
-                <div class="company">Synacor</div>
-            </header>
-    
-          <span class="location">
-            <span class="fa-solid fa-location-dot"></span>
-            Buffalo, NY
-          </span>
-           <div class="item" id="work-item">
-            <ul class="highlights">
-              <li><p><p>Lead developer in converting Zimbra email/collaboration system to a multi-tenant Kubernetes-native service, utilizing Golang and Oracle Cloud Infrastructure.</p></p></li>
-              <li><p><p>Contributed to core Zimbra engineering, working on legacy Java codebase with extensive use of remote debuggers.</p></p></li>
-              <li><p><p>Leveraged Golang and Kubernetes expertise to migrate several hundred million mailboxes from bare-metal servers to Zimbra on Kubernetes.</p></p></li>
-            </ul>
-          </div>
-        </section>
-        <section class="work-item">
-    
-            <header class="clear">
-              <div class="date">
-                <span class="startDate">May 2013</span>
-                <span class="endDate">- Jan 2019</span>
-              </div>
-              <div class="position">Senior Software Engineer</div>
-                <div class="company">Adblade / Solve Media</div>
-            </header>
-    
-          <span class="location">
-            <span class="fa-solid fa-location-dot"></span>
-            Buffalo, NY
-          </span>
-           <div class="item" id="work-item">
-            <ul class="highlights">
-              <li><p><p>Built a RESTful Data Management Platform (DMP) web server using Java/Netty, supporting sub-millisecond responses for demographic data requests, critical to ad-serving revenue.</p></p></li>
-              <li><p><p>Developed custom dispatching annotations and supported multiple HTTP methods for consumer targeting resources stored in Redis.</p></p></li>
-              <li><p><p>Ported a legacy image conversion REST server from Ruby to Java and migrated a Solaris data center environment to AWS.</p></p></li>
-            </ul>
-          </div>
-        </section>
-        <section class="work-item">
-    
-            <header class="clear">
-              <div class="date">
-                <span class="startDate">Nov 2004</span>
-                <span class="endDate">- Apr 2013</span>
-              </div>
-              <div class="position">Software Engineer III, Team Leader</div>
-                <div class="company">Kanoodle / Pulse360 / Seevast</div>
-            </header>
-    
-          <span class="location">
-            <span class="fa-solid fa-location-dot"></span>
-            Buffalo, NY
-          </span>
-           <div class="item" id="work-item">
-            <ul class="highlights">
-              <li><p><p>Developed heavy Perl applications for ad-serving systems, contributing Oracle enhancements to the DBIx::Class open-source ORM framework.</p></p></li>
-              <li><p><p>Performed Oracle DBA duties, including DDL review, SQL, and Oracle analytic functions.</p></p></li>
-              <li><p><p>Created a 'RoboDeploy' system for multi-threaded deployment of websites, Puppet configurations, and Perl modules to over 100 servers.</p></p></li>
-              <li><p><p>Utilized Mason framework for frontend development and Bash for system administration.</p></p></li>
-            </ul>
-          </div>
-        </section>
-        <section class="work-item">
-    
-            <header class="clear">
-              <div class="date">
-                <span class="startDate">Jun 1994</span>
-                <span class="endDate">- Nov 2004</span>
-              </div>
-              <div class="position">Co-Founder, Software Developer</div>
-                <div class="company">Netsville</div>
-            </header>
-    
-          <span class="location">
-            <span class="fa-solid fa-location-dot"></span>
-            Rochester, NY
-          </span>
-           <div class="item" id="work-item">
-            <ul class="highlights">
-              <li><p><p>Co-founded Netsville and developed 'Hazel,' one of the first e-commerce checkout systems, written in C with a templating language (HZML), plugin architecture, and DSL for shipping and tax calculations.</p></p></li>
-            </ul>
-          </div>
-        </section>
-      </section>
-    </section>
-    <section class="section">
-      <header>
-        <h2 class='section-title' class='section-title'>Interests</h2>
-      </header>
-      <section id="interests">
-        <div class="item">
-          <h3 class="name">
-            Personal Interests
-          </h3>
-          <ul class="keywords">
-            <li>Hacking, in the ESR sense</li>
-            <li>Tinkering with gadgets</li>
-            <li>Building PCs</li>
-            <li>Fallout, Starfield, Cyberpunk</li>
-            <li>Arguing with ChatGPT</li>
-            <li>Rolling in MUD</li>
-            <li>Watching The Love Boat</li>
-          </ul>
-        </div>
-      </section>
-    </section>
-
+    <a class="skip-to-content" href="#resume">Skip to content</a> <main id="resume"><header id="header" class="clear"><!--[!--><div><h1 class="name">Ronald E. Straight</h1> <h2 class="label"></h2></div> <span class="location"><span class="address">6 Park Lane Ct,</span> <span class="postalCode">14221,</span> <span class="city">Williamsville,</span> <span class="region">NY</span> <span class="countryCode">(US)</span></span> <!----><!----> <div id="contact"><!--[!--> <div class="email"><span class="fa-regular fa-envelope"></span> <a class="hide-href-print" href="mailto:straightre@gmail.com">straightre@gmail.com</a></div> <div class="phone"><span class="fa-solid fa-mobile-screen-button"></span> <a class="hide-href-print" href="tel:716-903-2417">716-903-2417</a></div></div> <nav id="profiles" aria-label="Social profiles"><div class="item"><div class="username"><span class="fa-brands fa-linkedin linkedin social"></span> <span class="url"><a target="_blank" href="https://linkedin.com/in/ronstr8/"><span class="show-only-url-print">ronstr8</span></a></span></div></div><div class="item"><div class="username"><span class="fa-brands fa-github github social"></span> <span class="url"><a target="_blank" href="https://github.com/ronstr8/"><span class="show-only-url-print">ronstr8</span></a></span></div></div></nav></header> <!--[!--><!----> <section class="section"><header><h2 class="section-title">Skills</h2></header> <section id="skills"><div class="item"><h3 class="name">Programming Languages</h3> <!--[!--> <ul class="keywords"><li>Bash</li><li>Java</li><li>Perl</li><li>Golang</li><li>C</li><li>Python</li><li>Rust</li><li>Javascript</li><li>MOO</li></ul></div><div class="item"><h3 class="name">Technologies</h3> <!--[!--> <ul class="keywords"><li>Kubernetes</li><li>Git</li><li>HTML</li><li>CSS</li><li>REST API</li><li>Oracle Cloud Infrastructure</li><li>AWS</li></ul></div><div class="item"><h3 class="name">Concepts</h3> <!--[!--> <ul class="keywords"><li>Object-Oriented Design</li><li>Refactoring</li><li>Debugging</li></ul></div><div class="item"><h3 class="name">Databases</h3> <!--[!--> <ul class="keywords"><li>Oracle</li><li>MySQL</li><li>PostgreSQL</li><li>MariaDB</li><li>Redis</li><li>MongoDB</li></ul></div><div class="item"><h3 class="name">Frameworks</h3> <!--[!--> <ul class="keywords"><li>Mason</li><li>DBIx::Class</li><li>Netty</li><li>Dropwizard</li></ul></div></section></section><!----> <section class="section"><header><h2 class="section-title">Work Experience <span class="item-count">(5)</span></h2></header> <section id="work"><section class="work-item"><!--[!--> <header class="clear"><div class="date"><span class="startDate">Oct 2024</span> <!--[!--><span class="endDate">- Current</span></div><!----> <div class="position">Househusband</div> <!--[!--><div class="company"></div></header> <span class="location"><span class="fa-solid fa-location-dot"></span> Buffalo, NY</span> <!--[!--> <div class="item" id="work-item"><!--[!--> <ul class="highlights"><li><!----><p>Stunning performance as the unemployed male half of a gen-X couple that are not actually marriea ***** WOULD NOT MARRRY AGAINd</p><!----></li><li><!----><p>General housekeeping, including dishes and laundry, vacuuming, cleaning bathrooms and kitchen, taking care of pet messes</p><!----></li><li><!----><p>Day companion for our little poochon rascal, Howard</p><!----></li><li><!----><p>Baking bread every other day, making chili and other food, including pepperoni rolls</p><!----></li><li><!----><p>Wander the Appalachian wasteland of Fallout 76 as a well-read cannibal with a shotgun and power fist</p><!----></li><li><!----><p>Daily hacking projects, mostly in Rust and perl (because I like it), with the help of Antigravity</p><!----></li><li><!----><p>Created a fully functional multiplayer whimsical wordgame running on minikube on my home server to the WORLD</p><!----></li><li><!----><p>Enthusiastic hobbyist experience with labeling and training AI models</p><!----></li></ul></div></section><section class="work-item"><!--[!--> <header class="clear"><div class="date"><span class="startDate">Feb 2019</span> <span class="endDate">- Oct 2024</span></div><!----> <div class="position">Senior Software Engineer</div> <!--[!--><div class="company"></div></header> <span class="location"><span class="fa-solid fa-location-dot"></span> Buffalo, NY</span> <!--[!--> <div class="item" id="work-item"><!--[!--> <ul class="highlights"><li><!----><p>Lead developer in converting Zimbra email/collaboration system to a multi-tenant Kubernetes-native service, utilizing Golang and Oracle Cloud Infrastructure.</p><!----></li><li><!----><p>Contributed to core Zimbra engineering, working on legacy Java codebase with extensive use of remote debuggers.</p><!----></li><li><!----><p>Leveraged Golang and Kubernetes expertise to migrate several hundred million mailboxes from bare-metal servers to Zimbra on Kubernetes.</p><!----></li></ul></div></section><section class="work-item"><!--[!--> <header class="clear"><div class="date"><span class="startDate">May 2013</span> <span class="endDate">- Jan 2019</span></div><!----> <div class="position">Senior Software Engineer</div> <!--[!--><div class="company"></div></header> <span class="location"><span class="fa-solid fa-location-dot"></span> Buffalo, NY</span> <!--[!--> <div class="item" id="work-item"><!--[!--> <ul class="highlights"><li><!----><p>Built a RESTful Data Management Platform (DMP) web server using Java/Netty, supporting sub-millisecond responses for demographic data requests, critical to ad-serving revenue.</p><!----></li><li><!----><p>Developed custom dispatching annotations and supported multiple HTTP methods for consumer targeting resources stored in Redis.</p><!----></li><li><!----><p>Ported a legacy image conversion REST server from Ruby to Java and migrated a Solaris data center environment to AWS.</p><!----></li></ul></div></section><section class="work-item"><!--[!--> <header class="clear"><div class="date"><span class="startDate">Nov 2004</span> <span class="endDate">- Apr 2013</span></div><!----> <div class="position">Software Engineer III, Team Leader</div> <!--[!--><div class="company"></div></header> <span class="location"><span class="fa-solid fa-location-dot"></span> Buffalo, NY</span> <!--[!--> <div class="item" id="work-item"><!--[!--> <ul class="highlights"><li><!----><p>Developed heavy Perl applications for ad-serving systems, contributing Oracle enhancements to the DBIx::Class open-source ORM framework.</p><!----></li><li><!----><p>Performed Oracle DBA duties, including DDL review, SQL, and Oracle analytic functions.</p><!----></li><li><!----><p>Created a 'RoboDeploy' system for multi-threaded deployment of websites, Puppet configurations, and Perl modules to over 100 servers.</p><!----></li><li><!----><p>Utilized Mason framework for frontend development and Bash for system administration.</p><!----></li></ul></div></section><section class="work-item"><!--[!--> <header class="clear"><div class="date"><span class="startDate">Jun 1994</span> <span class="endDate">- Nov 2004</span></div><!----> <div class="position">Co-Founder, Software Developer</div> <!--[!--><div class="company"></div></header> <span class="location"><span class="fa-solid fa-location-dot"></span> Rochester, NY</span> <!--[!--> <div class="item" id="work-item"><!--[!--> <ul class="highlights"><li><!----><p>Co-founded Netsville and developed 'Hazel,' one of the first e-commerce checkout systems, written in C with a templating language (HZML), plugin architecture, and DSL for shipping and tax calculations.</p><!----></li></ul></div></section></section></section><!----> <!--[!--><!----> <!--[!--><!----> <!--[!--><!----> <!--[!--><!----> <!--[!--><!----> <!--[!--><!----> <!--[!--><!----> <section class="section"><header><h2 class="section-title">Interests <span class="item-count">(1)</span></h2></header> <section id="interests"><div class="item"><h3 class="name">Personal Interests</h3> <ul class="keywords"><li>Hacking, in the ESR sense</li><li>Tinkering with gadgets</li><li>Building PCs</li><li>Fallout, Starfield, Cyberpunk</li><li>Arguing with ChatGPT</li><li>Rolling in MUD</li><li>Watching The Love Boat</li></ul> <!--[!--></div></section></section><!----> <!--[!--><!----></main>
   </body>
 </html>
