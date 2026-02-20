@@ -40,7 +40,7 @@ jobs:
 
       - name: Generate PDF Resume
         run: |
-          npx resumed render resume.json -o resume.pdf -t jsonresume-theme-stackoverflow
+          npx puppeteer print resume.html resume.pdf --no-sandbox --disable-setuid-sandbox --disable-gpu --disable-dev-shm-usage
 
       - name: Commit generated files
         run: |
