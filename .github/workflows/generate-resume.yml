@@ -21,16 +21,16 @@ jobs:
 
       - name: Install resume-cli and favorite themes
         run: |
-          npm install jsonresume-theme-stackoverflow jsonresume-theme-elegant jsonresume-theme-class
+          npm install resume-cli jsonresume-theme-stackoverflow jsonresume-theme-elegant jsonresume-theme-class
 
       - name: Generate HTML Resume
-        run: npx resume export resume.html --theme stackoverflow
+        run: npx resume-cli export resume.html --theme ./node_modules/jsonresume-theme-stackoverflow
 
       - name: Install wkhtmltopdf
         run: sudo apt-get update && sudo apt-get install -y wkhtmltopdf
 
       - name: Generate PDF Resume
-        run: wkhtmltopdf resume.html resume.pdf
+        run: npx resume-cli export resume.pdf --theme ./node_modules/jsonresume-theme-stackoverflow
 
       - name: Commit generated files
         run: |
