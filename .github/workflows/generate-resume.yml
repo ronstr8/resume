@@ -27,14 +27,6 @@ jobs:
         run: |
           # Render the HTML using the stackoverflow theme
           npx resumed render resume.json -o resume.html -t jsonresume-theme-stackoverflow
-          
-          # Inject CSS to force any custom styles, currently disabled
-          echo '<style>
-            body, .container, .main, #resume { 
-              background-color: black !important; 
-              background: black !important;
-            }
-          </style>' >> /dev/null ; :resume.html
 
       - name: Generate PDF Resume
         run: |
