@@ -45,7 +45,7 @@ jobs:
           git pull
           # Force add both to ensure they are tracked
           git add -f resume.html resume.pdf
-          git commit -m "Auto-generate white-background resume and PDF" || echo "No changes to commit"
+          git commit -m "Render resume in HTML and PDF" resume.* || echo "No changes to commit"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
