@@ -43,9 +43,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git pull
-          # Force add both to ensure they are tracked
-          git add -f resume.html resume.pdf
-          git commit -m "Render resume in HTML and PDF" resume.* || echo "No changes to commit"
+          git commit -a -m "Render resume in HTML and PDF" || echo "No changes to commit"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -56,3 +54,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
           publish_branch: gh-pages
+
