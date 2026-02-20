@@ -19,18 +19,17 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install resume-cli and favorite themes
+      - name: Install resumed and themes
+        # We include 'puppeteer' here to ensure the PDF engine is ready
         run: |
-          npm install resume-cli jsonresume-theme-stackoverflow jsonresume-theme-elegant jsonresume-theme-class
+          npm install resumed jsonresume-theme-stackoverflow puppeteer
 
       - name: Generate HTML Resume
-        run: npx resume-cli export resume.html --theme ./node_modules/jsonresume-theme-stackoverflow
-
-      - name: Install wkhtmltopdf
-        run: sudo apt-get update && sudo apt-get install -y wkhtmltopdf
+        run: npx resumed render resume.json -o resume.html -t stackoverflow
 
       - name: Generate PDF Resume
-        run: npx resume-cli export resume.pdf --theme ./node_modules/jsonresume-theme-stackoverflow
+        # 'resumed' uses Puppeteer by default for PDF exports
+        run: npx resumed export resume.pdf -t stackoverflow
 
       - name: Commit generated files
         run: |
@@ -49,4 +48,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
           publish_branch: gh-pages
-
