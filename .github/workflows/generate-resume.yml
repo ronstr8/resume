@@ -21,12 +21,12 @@ jobs:
 
       - name: Install tools and themes
         run: |
-          npm install resumed jsonresume-theme-stackoverflow json-resume-theme-professional puppeteer
+          npm install resumed jsonresume-theme-stackoverflow puppeteer
 
       - name: Generate HTML Resume
         run: |
           # Render the HTML using the stackoverflow theme
-          npx resumed render resume.json -o resume.html -t jsonresume-theme-professional
+          npx resumed render resume.json -o resume.html -t jsonresume-theme-stackoverflow
           
           # Inject CSS to force any custom styles, currently disabled
           echo '<style>
