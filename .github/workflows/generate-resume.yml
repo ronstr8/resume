@@ -19,15 +19,28 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install resumed and themes
+      - name: Install tools and themes
         run: |
           npm install resumed jsonresume-theme-stackoverflow puppeteer
 
       - name: Generate HTML Resume
-        run: npx resumed render resume.json -o resume.html -t jsonresume-theme-stackoverflow
+        run: |
+          # Render the HTML using the stackoverflow theme
+          npx resumed render resume.json -o resume.html -t jsonresume-theme-stackoverflow
+          
+          # Inject CSS to force any custom styles
+          echo '<style>
+            body, .container, .main, #resume { 
+              background-color: lightblue !important; 
+              background: white !important;
+            }
+          </style>' >> resume.html
 
       - name: Generate PDF Resume
-        run: npx resumed export resume.pdf -t jsonresume-theme-stackoverflow
+        run: |
+          # Use Puppeteer to print the modified HTML file directly to PDF
+          # This ensures the CSS injection above is preserved
+          npx puppeteer print resume.html resume.pdf
 
       - name: Commit generated files
         run: |
@@ -35,7 +48,7 @@ jobs:
           git config --local user.name "GitHub Action"
           git pull
           git add resume.html resume.pdf
-          git commit -m "Auto-generate resume formats from resume.json" || echo "No changes to commit"
+          git commit -m "Auto-generate white-background resume and PDF" || echo "No changes to commit"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -46,3 +59,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
           publish_branch: gh-pages
+
+
