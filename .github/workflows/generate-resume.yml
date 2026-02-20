@@ -27,16 +27,20 @@ jobs:
         run: |
           npx resumed render resume.json -o resume.html -t jsonresume-theme-stackoverflow
 
+          # Inject CSS to force any custom styles
+          echo '
+          <style>
+            .section header .date {
+              float: right;
+              font-weight: 600;
+              color: gray;
+            }
+          </style>' >> resume.html
+
+
       - name: Generate PDF Resume
         run: |
-          # Use --no-sandbox and --disable-setuid-sandbox for GitHub Actions
-          npx puppeteer print resume.html resume.pdf --no-sandbox --disable-setuid-sandbox
-          
-          # Explicit check to ensure the file exists before moving on
-          if [ ! -f resume.pdf ]; then
-            echo "PDF generation failed!"
-            exit 1
-          fi
+          npx resumed render resume.json -o resume.pdf -t jsonresume-theme-stackoverflow
 
       - name: Commit generated files
         run: |
