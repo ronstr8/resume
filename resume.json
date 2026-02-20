@@ -50,6 +50,20 @@
   ],
   "work": [
     {
+      "company": "Man and Woman, Living Together",
+      "position": "Househusband",
+      "location": "Buffalo, NY",
+      "startDate": "2024-10",
+      "highlights": [
+	    "General housekeeping, including dishes and laundry, vacuuming, cleaning bathrooms and kitchen, taking care of pet messes",
+		"Day companion for our little poochon rascal, Howard",
+		"Baking bread every other day, making chili and other food, including pepperoni rolls",
+		"Wander the Appalachian wasteland of Fallout 76 as a well-read cannibal with a shotgun and power fist",
+		"Daily hacking projects, mostly in Rust and with the help of Antigravity",
+		"Extensive hobbyist experience with labeling and  training AI models"
+]
+    },
+    {
       "company": "Synacor",
       "position": "Senior Software Engineer",
       "location": "Buffalo, NY",
