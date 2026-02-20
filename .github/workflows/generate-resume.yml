@@ -21,7 +21,8 @@ jobs:
 
       - name: Install tools and themes
         run: |
-          npm install resumed jsonresume-theme-stackoverflow puppeteer
+          # Quiet deprecation warnings, install latest Puppeteer
+          npm install --loglevel=error resumed jsonresume-theme-stackoverflow puppeteer@latest
 
       - name: Generate HTML Resume
         run: |
