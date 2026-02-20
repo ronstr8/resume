@@ -1,8 +1,11 @@
 {
   "basics": {
     "name": "Ronald E. Straight",
+    "label": "Senior Software Engineer",
     "email": "straightre@gmail.com",
     "phone": "716-903-2417",
+    "url": "https://github.com/ronstr8",
+    "summary": "Spending each day solving problems and building things with a great group of peers, and ending each day with more knowledge and wisdom than my yester-self. Oh, and it would be nice to actually want to go to work every day.",
     "location": {
       "address": "6 Park Lane Ct",
       "city": "Williamsville",
@@ -23,9 +26,6 @@
       }
     ]
   },
-  "objective": {
-    "summary": "Spending each day solving problems and building things with a great group of peers, and ending each day with more knowledge and wisdom than my yester-self. Oh, and it would be nice to actually want to go to work every day."
-  },
   "skills": [
     {
       "name": "Programming Languages",
@@ -33,11 +33,7 @@
     },
     {
       "name": "Technologies",
-      "keywords": ["Kubernetes", "Git", "HTML", "CSS", "REST API", "Oracle Cloud Infrastructure", "AWS"]
-    },
-    {
-      "name": "Concepts",
-      "keywords": ["Object-Oriented Design", "Refactoring", "Debugging"]
+      "keywords": ["Kubernetes", "Git", "HTML", "CSS", "REST API", "OCI", "AWS"]
     },
     {
       "name": "Databases",
@@ -50,27 +46,26 @@
   ],
   "work": [
     {
-      "company": "Man and Woman, Living Together",
+      "name": "Man and Woman, Living Together",
       "position": "Househusband",
       "location": "Buffalo, NY",
-      "startDate": "2024-10",
+      "startDate": "2024-10-01",
       "highlights": [
-	    "Stunning performance as the unemployed male half of a gen-X couple that are not actually marriea ***** WOULD NOT MARRRY AGAINd",
-	    "General housekeeping, including dishes and laundry, vacuuming, cleaning bathrooms and kitchen, taking care of pet messes",
-		"Day companion for our little poochon rascal, Howard",
-		"Baking bread every other day, making chili and other food, including pepperoni rolls",
-		"Wander the Appalachian wasteland of Fallout 76 as a well-read cannibal with a shotgun and power fist",
-		"Daily hacking projects, mostly in Rust and perl (because I like it), with the help of Antigravity",
-		"Created a fully functional multiplayer whimsical wordgame running on minikube on my home server to the WORLD",
-		"Enthusiastic hobbyist experience with labeling and training AI models"
-]
+        "Stunning performance as the unemployed male half of a gen-X couple.",
+        "General housekeeping, including laundry, maintenance, and maintaining the homestead.",
+        "Day companion for our little poochon rascal, Howard.",
+        "Artisanal bread baking (every other day) and specialized catering (pepperoni rolls).",
+        "Wander the Appalachian wasteland of Fallout 76 as a well-read cannibal with a shotgun and power fist.",
+        "Daily hacking projects, mostly in Rust and Perl, with the help of Antigravity.",
+        "Enthusiastic hobbyist experience with labeling and training AI models."
+      ]
     },
     {
-      "company": "Synacor",
+      "name": "Synacor",
       "position": "Senior Software Engineer",
       "location": "Buffalo, NY",
-      "startDate": "2019-02",
-      "endDate": "2024-10",
+      "startDate": "2019-02-01",
+      "endDate": "2024-10-01",
       "highlights": [
         "Lead developer in converting Zimbra email/collaboration system to a multi-tenant Kubernetes-native service, utilizing Golang and Oracle Cloud Infrastructure.",
         "Contributed to core Zimbra engineering, working on legacy Java codebase with extensive use of remote debuggers.",
@@ -78,57 +73,68 @@
       ]
     },
     {
-      "company": "Adblade / Solve Media",
+      "name": "Adblade / Solve Media",
       "position": "Senior Software Engineer",
       "location": "Buffalo, NY",
-      "startDate": "2013-05",
-      "endDate": "2019-01",
+      "startDate": "2013-05-01",
+      "endDate": "2019-01-01",
       "highlights": [
-        "Built a RESTful Data Management Platform (DMP) web server using Java/Netty, supporting sub-millisecond responses for demographic data requests, critical to ad-serving revenue.",
+        "Built a RESTful Data Management Platform (DMP) web server using Java/Netty, supporting sub-millisecond responses.",
         "Developed custom dispatching annotations and supported multiple HTTP methods for consumer targeting resources stored in Redis.",
         "Ported a legacy image conversion REST server from Ruby to Java and migrated a Solaris data center environment to AWS."
       ]
     },
     {
-      "company": "Kanoodle / Pulse360 / Seevast",
+      "name": "Kanoodle / Pulse360 / Seevast",
       "position": "Software Engineer III, Team Leader",
       "location": "Buffalo, NY",
-      "startDate": "2004-11",
-      "endDate": "2013-04",
+      "startDate": "2004-11-01",
+      "endDate": "2013-04-01",
       "highlights": [
-        "Developed heavy Perl applications for ad-serving systems, contributing Oracle enhancements to the DBIx::Class open-source ORM framework.",
-        "Performed Oracle DBA duties, including DDL review, SQL, and Oracle analytic functions.",
-        "Created a 'RoboDeploy' system for multi-threaded deployment of websites, Puppet configurations, and Perl modules to over 100 servers.",
-        "Utilized Mason framework for frontend development and Bash for system administration."
+        "Developed heavy Perl applications for ad-serving systems, contributing Oracle enhancements to the DBIx::Class framework.",
+        "Performed Oracle DBA duties, including DDL review and Oracle analytic functions.",
+        "Created a 'RoboDeploy' system for multi-threaded deployment to over 100 servers."
       ]
     },
     {
-      "company": "Netsville",
+      "name": "Netsville",
       "position": "Co-Founder, Software Developer",
       "location": "Rochester, NY",
-      "startDate": "1994-06",
-      "endDate": "2004-11",
+      "startDate": "1994-06-01",
+      "endDate": "2004-11-01",
       "highlights": [
-        "Co-founded Netsville and developed 'Hazel,' one of the first e-commerce checkout systems, written in C with a templating language (HZML), plugin architecture, and DSL for shipping and tax calculations."
+        "Co-founded Netsville and developed 'Hazel,' one of the first e-commerce checkout systems, written in C with a templating language (HZML)."
       ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Wordw*nk",
+      "description": "Multiplayer multi-service whimsical word game running on minikube in my bedroom.",
+      "highlights": [
+        "Developed a custom wordlist server in Rust to handle building lexicons and their rules for any language",
+        "Configured networking for public access to the local Kubernetes cluster at wordwank.fazigu.org.",
+        "Implemented real-time gameplay mechanics using Perl."
+      ],
+      "keywords": ["Kubernetes", "Minikube", "Perl", "Rust", "Networking"],
+      "startDate": "2026-01-01",
+      "url": "https://github.com/ronstr8"
     }
   ],
   "interests": [
     {
       "name": "Personal Interests",
       "keywords": [
-        "Hacking, in the ESR sense",
+        "Hacking (ESR sense)",
         "Tinkering with gadgets",
-        "Building PCs",
         "Fallout, Starfield, Cyberpunk",
-        "Arguing with ChatGPT",
-        "Rolling in MUD",
-        "Watching The Love Boat"
+        "Arguing with AI",
+        "The Love Boat"
       ]
     }
   ],
   "meta": {
-    "version": "1.1.1",
+    "version": "2.0.0",
     "format": "jsonresume"
   }
 }
