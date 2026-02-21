@@ -5,7 +5,7 @@
     "email": "straightre@gmail.com",
     "phone": "716-903-2417",
     "url": "https://github.com/ronstr8",
-    "summary": "I want to work with other clever human rubber ducks. If you have a problem with your employees using AI, then I do not want your job. It is an essential tool that gives you a team of agents when you hire one competent hacker. And you're going to need them until ASI comes and jobs don't exist for humans anymore.",
+    "summary": "With agentic coding you not only get me, but a masochistic junior engineer to do all the boring stuff. But they still need someone to tell them when they're rimraffing or something naughty, So, I want work to be a place to commune with my fellow clever human rubber ducks and all their little agents.",
     "location": {
       "address": "6 Park Lane Ct",
       "city": "Williamsville",
@@ -29,11 +29,11 @@
   "skills": [
     {
       "name": "Programming Languages",
-      "keywords": ["Bash", "Java", "Perl", "Golang", "C", "Python", "Rust", "Javascript", "MOO"]
+      "keywords": ["Bash", "Java", "Perl", "Golang", "C", "Python", "Rust", "Javascript" ]
     },
     {
       "name": "Technologies",
-      "keywords": ["Kubernetes", "Git", "HTML", "CSS", "REST API", "OCI", "AWS"]
+      "keywords": ["Kubernetes", "Git", "HTML", "CSS", "REST API", "OCI", "AWS", "Helm" ]
     },
     {
       "name": "Databases",
@@ -116,9 +116,20 @@
         "Configured networking for public access to the local Kubernetes cluster at wordwank.fazigu.org.",
         "Implemented real-time gameplay mechanics using Perl."
       ],
-      "keywords": ["Kubernetes", "Minikube", "Perl", "Rust", "Networking"],
+      "keywords": ["Kubernetes", "Minikube", "Helm", "Perl", "Rust", "Networking"],
       "startDate": "2026-01-01",
-      "url": "https://github.com/ronstr8"
+      "url": "https://wordwank.fazigu.org"
+    },
+    {
+      "name": "Card Shoggoths",
+      "description": "Multiplayer poker game with a bit of cosmic horror.",
+      "highlights": [
+        "Implemented the game server in Golang, with bare bones index.html/css frontend",
+        "Configured networking for public access to the local Kubernetes cluster at poker.fazigu.org."
+      ],
+      "keywords": ["Kubernetes", "Minikube", "Helm", "Golang",  "Networking"],
+      "startDate": "2026-01-01",
+      "url": "https://poker.fazigu.org"
     }
   ],
   "interests": [
@@ -134,8 +145,8 @@
     }
   ],
   "meta": {
-    "version": "2.0.1",
+    "version": "2.1.0",
     "format": "jsonresume",
-    "lastUpdated": "2026-02-20T17:48:57-05:00"
+    "lastUpdated": "2026-02-20T18:38:57-05:00"
   }
 }
