@@ -5,7 +5,7 @@
     "email": "straightre@gmail.com",
     "phone": "716-903-2417",
     "url": "https://github.com/ronstr8",
-    "summary": "With agentic coding you not only get me, but a masochistic junior engineer to do all the boring stuff. But they still need someone to tell them when they're rimraffing or something naughty, So, I want work to be a place to commune with my fellow clever human rubber ducks and all their little agents.",
+    "summary": "With agentic coding, you not only get me, but a masochistic junior engineer to do all the boring stuff. AI agents are good, but they  still need someone to tell them when they're rimraffing or something naughty, So, I want work to be a place to commune with my fellow clever human rubber ducks and all their little agents.",
     "location": {
       "address": "6 Park Lane Ct",
       "city": "Williamsville",
@@ -41,7 +41,7 @@
     },
     {
       "name": "Frameworks",
-      "keywords": ["Mason", "DBIx::Class", "Netty", "Dropwizard"]
+      "keywords": ["Mason", "DBIx::Class", "Netty", "Dropwizard", "React"]
     }
   ],
   "work": [
@@ -145,8 +145,8 @@
     }
   ],
   "meta": {
-    "version": "2.2.0",
+    "version": "2.2.1",
     "format": "jsonresume",
-    "lastUpdated": "2026-02-20T21:54:28-05:00"
+    "lastUpdated": "2026-02-21T09:04:03-05:00"
   }
 }
