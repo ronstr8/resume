@@ -40,7 +40,7 @@ jobs:
 
       - name: Generate PDF Resume
         run: |
-          ./scripts/generate-resume-pdf-from-html
+          ./scripts/generate-resume-pdf
 
       - name: Commit generated files
         run: |
