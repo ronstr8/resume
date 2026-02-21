@@ -3,11 +3,6 @@
 TMPFILE='resume-candidate.pdf'
 OUTFILE='resume.pdf'
 
-if ( ! type pdfinfo &>/dev/null ) ; then
-	sudo apt-get update
-	sudo apt-get install -y poppler-utils
-fi
-
 node <<EOT
 const puppeteer = require('puppeteer');
 (async () => {
@@ -19,7 +14,7 @@ const puppeteer = require('puppeteer');
 })();
 EOT
 
-if ( ! pdfinfo "${TMPFILE}" &>/dev/null ) ; then
+if ( file "${TMPFILE}" &>/dev/null | grep --quiet ASCII ) ; then
 	echo 'Failed to produce a valid PDF file; resume.pdf is untouched' &>/dev/stderr
 	rm -f "${TMPFILE}"
 	exit 1
