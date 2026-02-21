@@ -1,0 +1,36 @@
+#!/bin/bash
+
+TMPFILE='resume-candidate.pdf'
+OUTFILE='resume.pdf'
+
+if ( ! type pdfinfo &>/dev/null ) ; then
+	sudo apt-get update
+	sudo apt-get install -y poppler-utils
+fi
+
+node <<EOT
+const puppeteer = require('puppeteer');
+(async () => {
+  const browser = await puppeteer.launch({args: ['--no-sandbox']});
+  const page = await browser.newPage();
+  await page.goto('file://' + process.cwd() + '/resume.html', {waitUntil: 'networkidle0'});
+  await page.pdf({path: '${TMPFILE}', format: 'A4'});
+  await browser.close();
+})();
+EOT
+
+if ( ! pdfinfo "${TMPFILE}" &>/dev/null ) ; then
+	echo 'Failed to produce a valid PDF file; resume.pdf is untouched' &>/dev/stderr
+	rm -f "${TMPFILE}"
+	exit 1
+fi
+
+if (mv --force "${TMPFILE}" "${OUTFILE}" ) ; then
+	echo 'Moved valid generated PDF file to resume.pdf'
+	exit 0
+else
+	rm -f "${TMPFILE}"
+	echo "Failed to mv ${TMPFILE} to ${OUTFILE}; removed ${TMPFILE}"
+	exit 1
+fi
+
