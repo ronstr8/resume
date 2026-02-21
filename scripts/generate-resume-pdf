@@ -4,7 +4,8 @@ TMPFILE='resume-candidate.pdf'
 OUTFILE='resume.pdf'
 
 if ( ! type pdfinfo &>/dev/null ) ; then
-	apt-get install -y poppler-utils
+	sudo apt-get update
+	sudo apt-get install -y poppler-utils
 fi
 
 node <<EOT
