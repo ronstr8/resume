@@ -55,9 +55,7 @@
         "General housekeeping, including laundry, cooking, cleaning.",
         "Day companion for our little poochon rascal, Howard.",
         "Making bread from scratch every other day or so, and sometimes pepperoni rolls.",
-        "Wander the Appalachian wasteland of Fallout 76 as a well-read cannibal with a shotgun and power fist.",
-        "Daily hacking projects, mostly in Rust and Perl, with the help of Antigravity.",
-        "Enthusiastic experience with training/captioning local image models."
+        "Daily hacking projects with my artifical friend Antigravity."
       ]
     },
     {
@@ -110,11 +108,11 @@
   "projects": [
     {
       "name": "Wordw*nk",
-      "description": "Multiplayer multi-service whimsical word game running on minikube in my bedroom.",
+      "description": "Multiplayer whimsical word game running on minikube in my bedroom. Active development, please excuse downtime!",
       "highlights": [
-        "Developed a custom wordlist server in Rust to handle building lexicons and their rules for any language",
+        "Developed a custom wordlist server in Rust to handle building lexicons and their rules for any language.",
         "Configured networking for public access to the local Kubernetes cluster at wordwank.fazigu.org.",
-        "Implemented real-time gameplay mechanics using Perl."
+        "Implemented real-time gameplay mechanics using Perl, plus simple intelligent dummy players."
       ],
       "keywords": ["Kubernetes", "Minikube", "Helm", "Perl", "Rust", "Networking"],
       "startDate": "2026-01-01",
@@ -122,7 +120,7 @@
     },
     {
       "name": "Card Shoggoths",
-      "description": "Multiplayer poker game with a bit of cosmic horror.",
+      "description": "Multiplayer poker game with a bit of cosmic horror. Active development, please excuse downtime!",
       "highlights": [
         "Implemented the game server in Golang, with bare bones index.html/css frontend",
         "Configured networking for public access to the local Kubernetes cluster at poker.fazigu.org."
@@ -145,8 +143,9 @@
     }
   ],
   "meta": {
-    "version": "2.2.2",
+    "version": "2.2.3",
     "format": "jsonresume",
-    "lastUpdated": "2026-02-21T09:04:03-05:00"
+    "lastUpdated": "2026-02-26T16:58:46-05:00"
   }
 }
+
