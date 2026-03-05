@@ -29,11 +29,11 @@
   "skills": [
     {
       "name": "Programming Languages",
-      "keywords": ["Bash", "Java", "Perl", "Golang", "C", "Python", "Rust", "Javascript", "Node.js" ]
+      "keywords": ["Bash", "Java", "Perl", "Golang", "C", "Python", "Rust", "Javascript" ]
     },
     {
       "name": "Technologies",
-      "keywords": ["Kubernetes", "Git", "HTML", "CSS", "REST API", "OCI", "AWS", "Helm" ]
+      "keywords": ["Kubernetes", "Git", "HTML", "CSS", "REST API", "OCI", "AWS", "Helm", "Docker", "Node.js" ]
     },
     {
       "name": "Databases",
@@ -55,7 +55,7 @@
         "General housekeeping, including laundry, cooking, cleaning.",
         "Day companion for our little poochon rascal, Howard.",
         "Making bread from scratch every other day or so, and sometimes pepperoni rolls.",
-        "Daily hacking projects with my artifical friend Antigravity."
+        "Ongoing hacking projects with my artifical friend Antigravity, including running two multiplayer games in my home server's minikube cluster."
       ]
     },
     {
@@ -143,9 +143,9 @@
     }
   ],
   "meta": {
-    "version": "2.2.4",
+    "version": "2.2.5",
     "format": "jsonresume",
-    "lastUpdated": "2026-03-05T12:19:48-05:00"
+    "lastUpdated": "2026-03-05T12:42:03-05:00"
   }
 }
 
