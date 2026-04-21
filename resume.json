@@ -107,16 +107,16 @@
   ],
   "projects": [
     {
-      "name": "Wordw*nk",
+      "name": "Wordwonk",
       "description": "Multiplayer whimsical word game running on minikube in my bedroom. Active development, please excuse downtime!",
       "highlights": [
         "Developed a custom wordlist server in Rust to handle building lexicons and their rules for any language.",
-        "Configured networking for public access to the local Kubernetes cluster at wordwank.fazigu.org.",
+        "Configured networking for public access to the local Kubernetes cluster at wordwonk.fazigu.org.",
         "Implemented real-time gameplay mechanics using Perl, plus simple intelligent dummy players."
       ],
-      "keywords": ["Kubernetes", "Minikube", "Helm", "Perl", "Rust", "Networking"],
+      "keywords": ["Kubernetes", "Minikube", "Helm", "Perl", "Rust", "React", "Networking", "Antigravity", "Claude"],
       "startDate": "2026-01-01",
-      "url": "https://wordwank.fazigu.org"
+      "url": "https://wordwonk.fazigu.org"
     },
     {
       "name": "Card Shoggoths",
@@ -125,7 +125,7 @@
         "Implemented the game server in Golang, with bare bones index.html/css frontend",
         "Configured networking for public access to the local Kubernetes cluster at poker.fazigu.org."
       ],
-      "keywords": ["Kubernetes", "Minikube", "Helm", "Golang",  "Networking"],
+      "keywords": ["Kubernetes", "Minikube", "Helm", "Golang",  "Networking", "Antigravity"],
       "startDate": "2026-01-01",
       "url": "https://poker.fazigu.org"
     }
@@ -134,16 +134,16 @@
     {
       "name": "Personal Interests",
       "keywords": [
-        "Hacking (ESR sense)",
+        "Hacking (in the ESR sense)",
         "Tinkering with gadgets",
-        "Fallout, Starfield, Cyberpunk",
+        "Fallout/76, Starfield, Cyberpunk",
         "Arguing with AI",
         "The Love Boat"
       ]
     }
   ],
   "meta": {
-    "version": "2.2.5",
+    "version": "2.2.6",
     "format": "jsonresume",
     "lastUpdated": "2026-03-05T12:42:03-05:00"
   }

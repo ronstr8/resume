@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "jsonresume-theme-stackoverflow": "^2.2.0",
-    "puppeteer": "^24.38.0",
+    "puppeteer": "^24.42.0",
     "resume-cli": "^3.0.4",
     "resumed": "^6.1.0"
   }
