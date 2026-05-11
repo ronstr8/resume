@@ -44,7 +44,7 @@
       "keywords": ["Mason", "DBIx::Class", "Netty", "Dropwizard", "React", "Spring Boot"]
     },
 	{ "name": "Coding Agents",
-	  "keywords": ["Claude Code", "OpenAI Codex", "OpenClaw", "Aider" ]
+	  "keywords": ["Claude Code", "OpenAI Codex", "OpenClaw", "Aider", "Antigravity" ]
 	}
   ],
   "work": [
@@ -146,9 +146,9 @@
     }
   ],
   "meta": {
-    "version": "2.3.1",
+    "version": "3.0.1",
     "format": "jsonresume",
-    "lastUpdated": "2026-05-11T17:22:47-04:00"
+    "lastUpdated": "2026-05-11T18:24:36-04:00"
   }
 }
 
