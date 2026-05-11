@@ -42,7 +42,10 @@
     {
       "name": "Frameworks",
       "keywords": ["Mason", "DBIx::Class", "Netty", "Dropwizard", "React", "Spring Boot"]
-    }
+    },
+	{ "name": "Coding Agents",
+	  "keywords": ["Claude Code", "OpenAI Codex", "OpenClaw", "Aider" ]
+	}
   ],
   "work": [
     {
@@ -107,11 +110,11 @@
   ],
   "projects": [
     {
-      "name": "Wordwonk",
-      "description": "Multiplayer whimsical word game running on minikube in my bedroom. Active development, please excuse downtime!",
+      "name": "Logodal",
+      "description": "Multiplayer whimsical word game running on a kind cluster in my bedroom. Active development, please excuse downtime!",
       "highlights": [
         "Developed a custom wordlist server in Rust to handle building lexicons and their rules for any language.",
-        "Configured networking for public access to the local Kubernetes cluster at wordwonk.fazigu.org.",
+        "Configured networking for public access to the local Kubernetes cluster at logodal.com.",
         "Implemented real-time gameplay mechanics using Perl, plus simple intelligent dummy players."
       ],
       "keywords": ["Kubernetes", "Minikube", "Helm", "Perl", "Rust", "React", "Networking", "Antigravity", "Claude"],
@@ -143,9 +146,9 @@
     }
   ],
   "meta": {
-    "version": "2.2.6",
+    "version": "2.3.0",
     "format": "jsonresume",
-    "lastUpdated": "2026-03-05T12:42:03-05:00"
+    "lastUpdated": "2026-05-11T17:22:47-04:00"
   }
 }
 
