@@ -5,7 +5,7 @@
     "email": "straightre@gmail.com",
     "phone": "716-903-2417",
     "url": "https://github.com/ronstr8",
-    "summary": "AI agents are good, but they still need someone to tell them when they're about to rimraf or do something else naughty, With agentic coding, you not only get my unique human experience, but a team of masochistic junior engineers to do all the boring stuff. Work is where I want to go to swim with my fellow clever rubber ducks and all their little agents. Oh, and a chatbot wanted me to mention that \"I bring decades of experience in high-performance backend engineering, from C and Perl to modern Golang and Kubernetes-native Java and Rust microservices.\"",
+    "summary": "I bring decades of experience in high-performance backend engineering, from C and Perl to modern Golang and Kubernetes-native Java and Rust microservices. AI coding agents are good collaborators, but they still need someone to tell them when they're about to rimraf something important — with agentic coding you get my unique human experience plus a capable team for the tedious parts. Work is where I want to swim with my fellow clever rubber ducks.",
     "location": {
       "address": "6 Park Lane Ct",
       "city": "Williamsville",
@@ -54,7 +54,6 @@
       "location": "Buffalo, NY",
       "startDate": "2024-10-01",
       "highlights": [
-        "Stunning performance as the unemployed male half of a gen-X couple.",
         "Making bread from scratch every other day or so, and sometimes pepperoni rolls.",
         "Ongoing hacking projects with my artificial friends, including running two multiplayer games in my home server's Kubernetes cluster."
       ]
@@ -66,7 +65,7 @@
       "startDate": "2019-02-01",
       "endDate": "2024-10-01",
       "highlights": [
-        "Lead developer in converting Zimbra email/collaboration system to a multi-tenant Kubernetes-native service, utilizing Golang and Oracle Cloud Infrastructure.",
+        "Led the architecture and implementation of converting the Zimbra email/collaboration platform to a multi-tenant Kubernetes-native service, utilizing Golang and Oracle Cloud Infrastructure.",
         "Contributed to core Zimbra engineering, working on legacy Java codebase with extensive use of remote debuggers.",
         "Leveraged Golang and Kubernetes expertise to migrate several hundred million mailboxes from bare-metal servers to Zimbra on Kubernetes."
       ]
@@ -78,7 +77,7 @@
       "startDate": "2013-05-01",
       "endDate": "2019-01-01",
       "highlights": [
-        "Built a RESTful Data Management Platform (DMP) web server using Java/Netty, supporting sub-millisecond responses.",
+        "Built a high-availability RESTful Data Management Platform (DMP) using Java/Netty, supporting sub-millisecond responses at scale.",
         "Developed custom dispatching annotations and supported multiple HTTP methods for consumer targeting resources stored in Redis.",
         "Ported a legacy image conversion REST server from Ruby to Java and migrated a Solaris data center environment to AWS."
       ]
@@ -90,9 +89,9 @@
       "startDate": "2004-11-01",
       "endDate": "2013-04-01",
       "highlights": [
-        "Developed heavy Perl applications for ad-serving systems, contributing Oracle enhancements to the DBIx::Class framework.",
-        "Performed Oracle DBA duties, including DDL review and Oracle analytic functions.",
-        "Created a 'RoboDeploy' system for multi-threaded deployment to over 100 servers."
+        "Contributed Oracle-specific enhancements upstream to the DBIx::Class open-source ORM framework while developing high-traffic Perl ad-serving applications.",
+        "Performed Oracle DBA duties including schema review and analytic query development.",
+        "Built 'RoboDeploy', a multi-threaded parallel deployment system serving over 100 production servers."
       ]
     },
     {
@@ -109,7 +108,7 @@
   "projects": [
     {
       "name": "Logodal",
-      "description": "Multiplayer whimsical word game running on a kind cluster in my bedroom. Active development, please excuse downtime!",
+      "description": "Multiplayer whimsical word game running on a kind cluster in my bedroom. In active development.",
       "highlights": [
         "Developed a custom wordlist server in Rust to handle building lexicons and their rules for any language.",
         "Configured networking for public access to the local Kubernetes cluster at logodal.com.",
@@ -121,9 +120,9 @@
     },
     {
       "name": "Card Shoggoths",
-      "description": "Multiplayer poker game with a bit of cosmic horror. Active development, please excuse downtime!",
+      "description": "Multiplayer poker game with a bit of cosmic horror. In active development.",
       "highlights": [
-        "Implemented the game server in Golang, with bare bones index.html/css frontend",
+        "Implemented the game server in Golang with a minimal HTML/CSS frontend.",
         "Configured networking for public access to the local Kubernetes cluster at poker.fazigu.org."
       ],
       "keywords": ["Kubernetes", "Minikube", "Helm", "Golang",  "Networking", "Antigravity"],
@@ -144,9 +143,9 @@
     }
   ],
   "meta": {
-    "version": "3.0.4",
+    "version": "3.1.0",
     "format": "jsonresume",
-    "lastUpdated": "2026-05-12T11:30:00-04:00"
+    "lastUpdated": "2026-05-12T12:00:00-04:00"
   }
 }
 
