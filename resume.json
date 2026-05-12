@@ -43,7 +43,7 @@
       "name": "Frameworks",
       "keywords": ["Mason", "DBIx::Class", "Netty", "Dropwizard", "React", "Spring Boot"]
     },
-	{ "name": "AI Agents",
+	{ "name": "Coding Agents",
 	  "keywords": ["Claude", "Codex", "OpenClaw", "Aider", "Antigravity" ]
 	}
   ],
@@ -144,9 +144,9 @@
     }
   ],
   "meta": {
-    "version": "3.0.3",
+    "version": "3.0.4",
     "format": "jsonresume",
-    "lastUpdated": "2026-05-12T07:47:34-04:00"
+    "lastUpdated": "2026-05-12T11:30:00-04:00"
   }
 }
 
