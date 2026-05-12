@@ -67,7 +67,7 @@
       "highlights": [
         "Served as primary developer for the Golang-based Mailbox Locator Service, part of a team converting the Zimbra email/collaboration system to a multi-tenant Kubernetes-native service on Oracle Cloud Infrastructure.",
         "Contributed to core Zimbra engineering, working on legacy Java codebase with extensive use of remote debuggers.",
-        "Leveraged Golang and Kubernetes expertise to migrate several hundred million mailboxes from bare-metal servers to Zimbra on Kubernetes."
+        "Leveraged Golang and Kubernetes expertise to migrate several hundred million user mailboxes — containing sensitive personal communications — from bare-metal servers to Zimbra on Kubernetes, maintaining data integrity throughout."
       ]
     },
     {
@@ -111,7 +111,7 @@
       "description": "Multiplayer whimsical word game running on a kind cluster in my bedroom. In active development.",
       "highlights": [
         "Developed a custom wordlist server in Rust to handle building lexicons and their rules for any language.",
-        "Configured networking for public access to the local Kubernetes cluster at logodal.com.",
+        "Configured networking and TLS termination for public access to the local Kubernetes cluster at logodal.com.",
         "Implemented real-time gameplay mechanics using Perl, plus simple intelligent dummy players."
       ],
       "keywords": ["Kubernetes", "Minikube", "Helm", "Perl", "Rust", "React", "Networking", "Antigravity", "Claude", "Codex"],
@@ -143,9 +143,9 @@
     }
   ],
   "meta": {
-    "version": "3.1.1",
+    "version": "3.1.2",
     "format": "jsonresume",
-    "lastUpdated": "2026-05-12T13:00:00-04:00"
+    "lastUpdated": "2026-05-12T14:00:00-04:00"
   }
 }
 
