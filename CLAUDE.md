@@ -28,13 +28,12 @@ Generate PDF (requires `resume.html` to already exist):
 npm run build:pdf
 ```
 
-There is also an ATS-friendly version using `jsonresume-theme-even` (no Font Awesome, inline SVGs only, linear DOM order). Build it the same way:
+There is also an ATS-friendly PDF (`resume-ats.pdf`) using `jsonresume-theme-even` (no Font Awesome, inline SVGs only, linear DOM order). The intermediate HTML is a temp artifact and is gitignored. Build it:
 ```
-npm run build:ats-html
-npm run build:ats-pdf
+npm run build:ats-html && npm run build:ats-pdf
 ```
 
-This produces `resume-ats.html` and `resume-ats.pdf` — use the ATS PDF when uploading to job boards or LinkedIn.
+Use `resume-ats.pdf` when uploading to job boards or LinkedIn.
 
 ## CI / Deployment
 

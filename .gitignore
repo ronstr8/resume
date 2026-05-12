@@ -1,6 +1,8 @@
 # Node.js dependencies
 node_modules/
-package-lock.json
+
+# ATS HTML is a build intermediate; only the PDF is kept
+resume-ats.html
 
 # Logs
 npm-debug.log*
