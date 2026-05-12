@@ -5,7 +5,7 @@
     "email": "straightre@gmail.com",
     "phone": "716-903-2417",
     "url": "https://github.com/ronstr8",
-    "summary": "I bring decades of experience in high-performance backend engineering, from C and Perl to modern Golang and Kubernetes-native Java and Rust microservices. AI coding agents are good collaborators, but they still need someone to tell them when they're about to rimraf something important — with agentic coding you get my unique human experience plus a capable team for the tedious parts. Work is where I want to swim with my fellow clever rubber ducks.",
+    "summary": "I bring decades of experience in high-performance backend engineering, from C and Perl to modern Golang and Kubernetes-native Java and Rust microservices. AI coding agents are good collaborators, but they still need someone to tell them when they're about to rimraf something important — with agentic coding you get my unique human experience plus a team of masochistic junior engineers to do all the boring stuff. Work is where I want to swim with my fellow clever rubber ducks.",
     "location": {
       "address": "6 Park Lane Ct",
       "city": "Williamsville",
@@ -65,7 +65,7 @@
       "startDate": "2019-02-01",
       "endDate": "2024-10-01",
       "highlights": [
-        "Led the architecture and implementation of converting the Zimbra email/collaboration platform to a multi-tenant Kubernetes-native service, utilizing Golang and Oracle Cloud Infrastructure.",
+        "Served as primary developer for the Golang-based Mailbox Locator Service, part of a team converting the Zimbra email/collaboration system to a multi-tenant Kubernetes-native service on Oracle Cloud Infrastructure.",
         "Contributed to core Zimbra engineering, working on legacy Java codebase with extensive use of remote debuggers.",
         "Leveraged Golang and Kubernetes expertise to migrate several hundred million mailboxes from bare-metal servers to Zimbra on Kubernetes."
       ]
@@ -89,9 +89,9 @@
       "startDate": "2004-11-01",
       "endDate": "2013-04-01",
       "highlights": [
-        "Contributed Oracle-specific enhancements upstream to the DBIx::Class open-source ORM framework while developing high-traffic Perl ad-serving applications.",
-        "Performed Oracle DBA duties including schema review and analytic query development.",
-        "Built 'RoboDeploy', a multi-threaded parallel deployment system serving over 100 production servers."
+        "Contributed Oracle-specific enhancements upstream to the DBIx::Class open-source ORM framework while developing heavy Perl ad-serving applications.",
+        "Performed Oracle DBA duties, including DDL review and Oracle analytic functions.",
+        "Created a 'RoboDeploy' system for multi-threaded deployment to over 100 servers."
       ]
     },
     {
@@ -122,7 +122,7 @@
       "name": "Card Shoggoths",
       "description": "Multiplayer poker game with a bit of cosmic horror. In active development.",
       "highlights": [
-        "Implemented the game server in Golang with a minimal HTML/CSS frontend.",
+        "Implemented the game server in Golang, with a bare bones index.html/css frontend.",
         "Configured networking for public access to the local Kubernetes cluster at poker.fazigu.org."
       ],
       "keywords": ["Kubernetes", "Minikube", "Helm", "Golang",  "Networking", "Antigravity"],
@@ -143,9 +143,9 @@
     }
   ],
   "meta": {
-    "version": "3.1.0",
+    "version": "3.1.1",
     "format": "jsonresume",
-    "lastUpdated": "2026-05-12T12:00:00-04:00"
+    "lastUpdated": "2026-05-12T13:00:00-04:00"
   }
 }
 
