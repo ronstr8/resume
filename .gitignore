@@ -1,6 +1,9 @@
 # Node.js dependencies
 node_modules/
 
+# ATS HTML is a build intermediate; only the PDF is kept
+resume-ats.html
+
 # Logs
 npm-debug.log*
 yarn-debug.log*
