@@ -15,7 +15,7 @@ npm install
 
 Generate HTML (must run before PDF):
 ```
-npx resumed render resume.json -o resume.html -t jsonresume-theme-stackoverflow
+npm run build:html
 ```
 
 The CI workflow also appends a CSS block to `resume.html` after rendering (for date styling). When building locally for a final output, replicate that:
@@ -25,8 +25,16 @@ echo '<style>.section header .date { float: right; font-weight: 600; color: gray
 
 Generate PDF (requires `resume.html` to already exist):
 ```
-./scripts/generate-resume-pdf
+npm run build:pdf
 ```
+
+There is also an ATS-friendly version using `jsonresume-theme-even` (no Font Awesome, inline SVGs only, linear DOM order). Build it the same way:
+```
+npm run build:ats-html
+npm run build:ats-pdf
+```
+
+This produces `resume-ats.html` and `resume-ats.pdf` — use the ATS PDF when uploading to job boards or LinkedIn.
 
 ## CI / Deployment
 

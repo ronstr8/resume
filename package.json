@@ -2,14 +2,15 @@
   "name": "resume-builder",
   "version": "1.0.0",
   "scripts": {
-    "build:html": "resume export resume.html",
-    "build:txt": "resume export resume.txt --format txt",
-    "build:pdf": "resume export resume.pdf"
+    "build:html": "resumed render resume.json -o resume.html -t jsonresume-theme-stackoverflow",
+    "build:pdf": "./scripts/generate-resume-pdf",
+    "build:ats-html": "resumed render resume.json -o resume-ats.html -t jsonresume-theme-even",
+    "build:ats-pdf": "./scripts/generate-resume-pdf resume-ats.html resume-ats.pdf"
   },
   "dependencies": {
+    "jsonresume-theme-even": "^0.26.1",
     "jsonresume-theme-stackoverflow": "^2.2.0",
     "puppeteer": "^24.43.1",
-    "resume-cli": "^3.0.4",
     "resumed": "^6.1.0"
   }
 }
