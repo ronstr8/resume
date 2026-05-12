@@ -20,8 +20,7 @@ jobs:
           node-version: '24'
 
       - name: Install tools and themes
-        run: |
-          npm install --loglevel error resumed jsonresume-theme-stackoverflow jsonresume-theme-even puppeteer
+        run: npm ci
 
       - name: Generate HTML Resume
         run: |
