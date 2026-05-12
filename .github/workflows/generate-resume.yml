@@ -21,7 +21,7 @@ jobs:
 
       - name: Install tools and themes
         run: |
-          npm install --loglevel error resumed jsonresume-theme-stackoverflow puppeteer
+          npm install --loglevel error resumed jsonresume-theme-stackoverflow jsonresume-theme-even puppeteer
 
       - name: Generate HTML Resume
         run: |
@@ -37,10 +37,17 @@ jobs:
             }
           </style>' >> resume.html
 
+      - name: Generate ATS-friendly HTML Resume
+        run: |
+          npx resumed render resume.json -o resume-ats.html -t jsonresume-theme-even
 
       - name: Generate PDF Resume
         run: |
           ./scripts/generate-resume-pdf
+
+      - name: Generate ATS-friendly PDF Resume
+        run: |
+          ./scripts/generate-resume-pdf resume-ats.html resume-ats.pdf
 
       - name: Commit generated files
         run: |
