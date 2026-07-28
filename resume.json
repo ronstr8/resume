@@ -33,7 +33,7 @@
     },
     {
       "name": "Technologies",
-      "keywords": ["Kubernetes", "Git", "HTML", "CSS", "REST API", "OCI", "AWS", "Helm", "Docker", "Node.js" ]
+      "keywords": ["Kubernetes", "Git", "HTML", "CSS", "REST API", "OCI", "AWS", "Helm", "Docker", "Node.js", "LLM" ]
     },
     {
       "name": "Databases",
@@ -112,7 +112,8 @@
       "highlights": [
         "Developed a custom wordlist server in Rust to handle building lexicons and their rules for any language.",
         "Configured networking and TLS termination for public access to the local Kubernetes cluster at logodal.com.",
-        "Implemented real-time gameplay mechanics using Perl, plus simple intelligent dummy players."
+        "Implemented real-time gameplay mechanics using Perl, plus simple intelligent dummy players.",
+		"Use in-cluster ollama to generate personalized quips for the AI players"
       ],
       "keywords": ["Kubernetes", "Minikube", "Helm", "Perl", "Rust", "React", "Networking", "Antigravity", "Claude", "Codex"],
       "startDate": "2026-01-01",
@@ -143,9 +144,9 @@
     }
   ],
   "meta": {
-    "version": "3.1.2",
+    "version": "3.2.0",
     "format": "jsonresume",
-    "lastUpdated": "2026-05-12T14:00:00-04:00"
+    "lastUpdated": "2026-07-28T14:14:25-04:00"
   }
 }
 
