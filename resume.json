@@ -65,7 +65,7 @@
       "startDate": "2019-02-01",
       "endDate": "2024-10-01",
       "highlights": [
-        "Served as primary developer for the Golang-based Mailbox Locator Service, part of a team converting the Zimbra email/collaboration system to a multi-tenant Kubernetes-native service on Oracle Cloud Infrastructure.",
+        "Served as primary developer for the Golang-based Mailbox Locator Service, part of a global team converting the Zimbra email/collaboration system to a multi-tenant Kubernetes-native service on Oracle Cloud Infrastructure.",
         "Contributed to core Zimbra engineering, working on legacy Java codebase with extensive use of remote debuggers.",
         "Leveraged Golang and Kubernetes expertise to migrate several hundred million user mailboxes — containing sensitive personal communications — from bare-metal servers to Zimbra on Kubernetes, maintaining data integrity throughout."
       ]
@@ -144,7 +144,7 @@
     }
   ],
   "meta": {
-    "version": "3.2.0",
+    "version": "3.2.1",
     "format": "jsonresume",
     "lastUpdated": "2026-07-28T14:14:25-04:00"
   }
