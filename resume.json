@@ -49,23 +49,13 @@
   ],
   "work": [
     {
-      "name": "Man and Woman, Living Together",
-      "position": "Househusband",
-      "location": "Buffalo, NY",
-      "startDate": "2024-10-01",
-      "highlights": [
-        "Making bread from scratch every other day or so, and sometimes pepperoni rolls.",
-        "Ongoing hacking projects with my artificial friends, including running two multiplayer games in my home server's Kubernetes cluster."
-      ]
-    },
-    {
       "name": "Synacor",
       "position": "Senior Software Engineer",
       "location": "Buffalo, NY",
       "startDate": "2019-02-01",
       "endDate": "2024-10-01",
       "highlights": [
-        "Served as primary developer for the Golang-based Mailbox Locator Service, part of a team converting the Zimbra email/collaboration system to a multi-tenant Kubernetes-native service on Oracle Cloud Infrastructure.",
+        "Served as primary developer for the Golang-based Mailbox Locator Service, part of a global team converting the Zimbra email/collaboration system to a multi-tenant Kubernetes-native service on Oracle Cloud Infrastructure.",
         "Contributed to core Zimbra engineering, working on legacy Java codebase with extensive use of remote debuggers.",
         "Leveraged Golang and Kubernetes expertise to migrate several hundred million user mailboxes — containing sensitive personal communications — from bare-metal servers to Zimbra on Kubernetes, maintaining data integrity throughout."
       ]
@@ -144,9 +134,9 @@
     }
   ],
   "meta": {
-    "version": "3.2.0",
+    "version": "4.0.0",
     "format": "jsonresume",
-    "lastUpdated": "2026-07-28T14:14:25-04:00"
+    "lastUpdated": "2026-08-14T14:39:22-04:00"
   }
 }
 
