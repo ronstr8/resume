@@ -44,7 +44,7 @@
       "keywords": ["Netty", "Dropwizard", "React"]
     },
 	{ "name": "AI",
-	  "keywords": ["Claude Code", "Codex", "Aider", "Antigravity", "Paperclip"]
+	  "keywords": ["Claude Code", "Codex", "Antigravity", "Paperclip"]
 	}
   ],
   "work": [
@@ -134,9 +134,9 @@
     }
   ],
   "meta": {
-    "version": "4.3.0",
+    "version": "4.3.1",
     "format": "jsonresume",
-    "lastUpdated": "2026-10-30T14:00:00-04:00"
+    "lastUpdated": "2026-11-09T09:24:46-05:00"
   }
 }
 
